@@ -2,19 +2,14 @@
 
 /* ————————————————————修改PDF双链样式———————————————————— */
 .protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref'] {
-    display: inline-block;
-    color: #e94848;
-    font-weight: bold;
-    padding: 4px;
-    border: 1px solid var(--b3-border-color1);
-    /* border-radius: var(--b3-border-radius-noraml); */
+    color: var(--b3-theme-on-background);
+    text-decoration: 1px solid underline var(--b3-theme-primary);
     margin: 0px;
 }
 
 
 .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]:before {
-    /* content: url("../../src/pdf1.svg"); */
-    content: url("../../src/pdf.svg");
+    content: url("../../src/file-pdf.svg");
     position: relative;
     top: 0.1em;
     margin-right: 4px;

@@ -38,7 +38,7 @@
     position: relative;
     z-index: 0;
     vertical-align: middle;
-    /* margin-top: 36px; */
+    margin-top: 36px;
 }
 
 .protyle-wysiwyg [data-node-id].h2,
@@ -47,7 +47,7 @@
     font-weight: 550;
     position: relative;
     z-index: 0;
-    /* margin-top: 30px; */
+    margin-top: 30px;
 }
 
 .protyle-wysiwyg [data-node-id].h3,
@@ -56,7 +56,7 @@
     font-weight: 550;
     position: relative;
     z-index: 0;
-    /* margin-top: 24px; */
+    margin-top: 24px;
 }
 
 .protyle-wysiwyg [data-node-id].h4,
@@ -65,7 +65,7 @@
     font-weight: 550;
     position: relative;
     z-index: 0;
-    /* margin-top: 18px; */
+    margin-top: 18px;
 }
 
 .protyle-wysiwyg [data-node-id].h5,
@@ -74,7 +74,7 @@
     font-weight: 550;
     position: relative;
     z-index: 0;
-    /* margin-top: 12px; */
+    margin-top: 12px;
 }
 
 .protyle-wysiwyg [data-node-id].h6,
@@ -83,7 +83,7 @@
     font-weight: 550;
     position: relative;
     z-index: 0;
-    /* margin-top: 6px; */
+    margin-top: 6px;
 }
 
 /* 设置6级标题高度 */

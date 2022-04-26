@@ -88,7 +88,8 @@
 @import url("style/05-custom-function-for-file/custom-function-for-file.css");
 /* 增加块的自定义属性 */
 @import url("style/06-custom-function-for-block/custom-function-for-block.css");
-
+/* 增加 Roy 的列表转死我导图代码 */
+@import url("style/list-to-map.css");
 
 /* ————————————————————引入自定义设置———————————————————— */
 /* 搜索界面左右排版 */

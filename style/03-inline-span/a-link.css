@@ -2,6 +2,7 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty) {
     border-bottom: 0.1em solid #0066ff;
+    color: var(--b3-theme-on-background);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty)::before {
@@ -37,10 +38,10 @@
 }
 
 /* ————————————————————正文中的超链接保持原来的颜色———————————————————— */
-.item__main a,
+/* .item__main a,
 .p [data-type="a"] {
     color: var(--b3-theme-primary) !important;
-}
+} */
 
 
 /* -----------------------------------------超链接 END----------------------------------- */
