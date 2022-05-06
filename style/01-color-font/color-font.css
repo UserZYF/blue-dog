@@ -59,7 +59,7 @@
     --b3-theme-on-error: white;
 
     /* 字体 */
-    --b3-font-family: 'PingFang SC', "Microsoft YaHei", "HarmonyOS Sans SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --b3-font-family: 'PingFang SC', "HarmonyOS Sans SC", "Microsoft YaHei", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --b3-font-family-code: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Liberation Mono", "Courier New", monospace;
     --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
     --b3-font-family-graph: mononoki;

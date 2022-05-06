@@ -23,6 +23,16 @@
 	font-size: 1.2em;
 }
 
+/* 首项中修改块引用颜色 */
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div span[data-type='block-ref'] {
+	color: white;
+}
+
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div span[data-type='block-ref']::before,
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div span[data-type='block-ref']::after {
+	color: rgba(255, 255, 255, 0.5);
+}
+
 /* 第二项颜色 */
 .protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.list>div.li>div.p>div {
 	color: #0066ff;

@@ -2,7 +2,7 @@
 
 /* 设置引用块格式 */
 .protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
-    color: #175199 !important;
+    color: #175199;
     font-weight: bold;
     /* background-color: #0066ff1a; */
     padding: 1px 3px;
