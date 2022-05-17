@@ -168,11 +168,12 @@ span.b3-list-item__action.b3-tooltips[data-type="new"] {
     background-image: url("../../src/new.svg");
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    top: 4px;
+    top: 1px;
 }
 
 span.b3-list-item__action.b3-tooltips[data-type="new"]:hover {
     background-image: url(../../src/new-c.svg);
+    background-color: transparent;
 }
 
 /* ————————————————————更改更多按钮样式———————————————————— */
@@ -188,12 +189,13 @@ span.b3-list-item__action.b3-tooltips[data-type="more-file"] {
     background-image: url(../../src/new-file.svg);
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    top: 4px;
+    top: 1px;
 }
 
 span.b3-list-item__action.b3-tooltips[data-type="more-root"]:hover,
 span.b3-list-item__action.b3-tooltips[data-type="more-file"]:hover {
     background-image: url(../../src/new-file-c.svg);
+    background-color: transparent;
 }
 
 /* ----------------------------------------修改文档树新建按钮的样式 END----------------------------------------- */

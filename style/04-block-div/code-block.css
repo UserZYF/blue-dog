@@ -48,12 +48,12 @@
 
 /*  ————————————————————————————————————代码块行数——————————————————————————————————*/
 .protyle-linenumber__rows {
-    margin-top: 14px !important;
-    background-color: transparent;
-    padding-bottom: 0px;
+    margin-top: 32px !important;
+    background-color: #f8f9fa;
     margin-bottom: 0px;
     font-family: var(--b3-font-family-code);
     border-top-left-radius: 4px;
+    padding: 4px;
 }
 
 .protyle-linenumber__rows span::before {

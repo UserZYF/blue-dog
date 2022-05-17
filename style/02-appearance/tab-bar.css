@@ -55,6 +55,33 @@ ul.fn__flex.layout-tab-bar {
     color: white;
 }
 
+.layout-tab-bar .item:not(:last-child) {
+    box-shadow: none;
+}
 
+.layout__wnd--active .layout-tab-bar .item--focus {
+    box-shadow: inset 0 2px 0 0 transparent,
+        0px 0px 0.5px rgba(0, 0, 0, 0.055),
+        0px 0px 4px rgba(0, 0, 0, 0.11) !important;
+}
+
+/* 显示钉住的标签页中的文字 */
+.layout-tab-bar .item--pin .item__text {
+    display: block !important;
+}
+
+
+/* 去掉标签页上面的emoji */
+.layout-tab-bar .item__icon {
+    display: none;
+}
+
+li.item.item--pin::after {
+    content: "📌";
+    font-size: 0.7em;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
 
 /* --------------------------------------------------标签页 END--------------------------------------------- */

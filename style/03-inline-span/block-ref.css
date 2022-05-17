@@ -13,13 +13,13 @@
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
     color: rgba(128, 128, 128, 0.6);
     content: "[[";
-    font-family: var(--b3-font-family-code);
+    /* font-family: var(--b3-font-family-code); */
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
     color: rgba(128, 128, 128, 0.6);
     content: "]]";
-    font-family: var(--b3-font-family-code);
+    /* font-family: var(--b3-font-family-code); */
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]:hover {

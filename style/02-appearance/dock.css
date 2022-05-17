@@ -19,3 +19,20 @@ div#dockLeft {
 div#dockRight {
     border-left: 1px solid var(--b3-border-color);
 }
+
+/* 调整顶栏图标外边距 */
+#toolbar .toolbar__item {
+    margin: 0 4px;
+}
+
+/* 设置顶栏高度 */
+.toolbar {
+    height: 24px;
+    line-height: 24px;
+}
+
+/* 调整顶栏图标大小 */
+div#toolbar svg {
+    height: 12px;
+    width: 12px;
+}

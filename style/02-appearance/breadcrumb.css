@@ -12,6 +12,7 @@
     margin-right: 6px;
     border: 1px solid var(--b3-border-color);
     border-radius: 4px !important;
+    padding-top: 0px;
 }
 
 .protyle-breadcrumb__item svg {
@@ -26,6 +27,11 @@
 .protyle-content {
     border-top: var(--b3-border-normal);
     box-shadow: var(--b3-protyle-content-shadow);
+}
+
+.protyle-breadcrumb button.b3-tooltips.b3-tooltips__w.block__icon {
+    position: relative;
+    top: 2px;
 }
 
 /* -------------------------------------------------面包屑导航样式 END-------------------------------------------- */
