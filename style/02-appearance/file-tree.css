@@ -201,7 +201,7 @@ span.b3-list-item__action.b3-tooltips[data-type="more-file"]:hover {
 /* ----------------------------------------修改文档树新建按钮的样式 END----------------------------------------- */
 
 /* 设置文档树各个文档的高度 */
-.fn__flex-1.fn__flex-column.file-tree .b3-list-item {
+.fn__flex-1.fn__flex-column.file-tree.sy__file .b3-list-item {
     height: 2em;
 }
 
