@@ -1,14 +1,12 @@
 /* 隐藏左上角设置按钮，鼠标悬浮时显示 */
-/* #toolbar .toolbar__item svg {
+#toolbar .toolbar__item svg {
     opacity: 0;
-    /* background-color: red; */
 }
 
 #toolbar:hover svg {
     opacity: 1;
 }
 
-*/
 
 /* 给左侧dock栏设置右边框 */
 div#dockLeft {
@@ -18,21 +16,4 @@ div#dockLeft {
 /* 给右侧dock栏设置左边框 */
 div#dockRight {
     border-left: 1px solid var(--b3-border-color);
-}
-
-/* 调整顶栏图标外边距 */
-#toolbar .toolbar__item {
-    margin: 0 4px;
-}
-
-/* 设置顶栏高度 */
-.toolbar {
-    height: 24px;
-    line-height: 24px;
-}
-
-/* 调整顶栏图标大小 */
-div#toolbar svg {
-    height: 12px;
-    width: 12px;
 }
