@@ -59,7 +59,7 @@
     --b3-theme-on-error: white;
 
     /* 字体 */
-    --b3-font-family: 'PingFang SC', "HarmonyOS Sans SC", "Microsoft YaHei", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --b3-font-family: "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --b3-font-family-code: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Liberation Mono", "Courier New", monospace;
     --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
     --b3-font-family-graph: mononoki;
@@ -117,10 +117,10 @@
     --b3-font-color6: #007bff;
     --b3-font-color7: #6f42c1;
     --b3-font-color8: #6c757d;
-    --b3-font-color9: white;
-    --b3-font-color10: white;
-    --b3-font-color11: white;
-    --b3-font-color12: white;
+    --b3-font-color9: #f4c2c7;
+    --b3-font-color10: #ffecb4;
+    --b3-font-color11: #b9e3ea;
+    --b3-font-color12: #bee4c7;
     --b3-font-color13: gray;
 
     /* 13种自定义背景颜色 */
@@ -212,7 +212,7 @@
     /* 删除线文字颜色 */
     --b3-protyle-inline-s-color: var(--b3-theme-on-background);
     /* 超链接颜色和鼠标悬浮颜色，不用管 */
-    --b3-protyle-inline-link-color: #408bba;
+    --b3-protyle-inline-link-color: transparent;
     --b3-protyle-inline-link-hover-color: red;
     /* 高亮颜色/标记颜色 */
     --b3-protyle-inline-mark-background: #fef852;

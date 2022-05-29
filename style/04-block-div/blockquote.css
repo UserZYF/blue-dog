@@ -1,10 +1,40 @@
 /* ----------------------------------------------引用---------------------------------------------- */
 /* ——————————————————————————设置引用格式———————————————————————————— */
-/* .protyle-wysiwyg [data-node-id].bq,
-.b3-typography blockquote {
-    border-left: 4px solid rgb(207, 207, 207);
-} */
+/* ——————————————————————————设置段落中的引用样式———————————————————————————— */
+.protyle-wysiwyg [data-node-id].bq:not(div.list div.bq):not([style*="background-color: var(--b3-card"]) {
+    border-left-color: transparent;
+    text-align: justify;
+    background-image: url(../../src/bq.svg);
+    background-repeat: no-repeat;
+    background-position: left 25px top 20px;
+    background-color: #f8f8f8;
+    color: rgba(0, 0, 0, .68);
+    margin: 30px 0;
+    padding: 30px 20px 20px;
+}
 
+
+
+/* ————————————————————设置列表中的引用样式———————————————————— */
+div.list div.bq {
+    min-height: 26px;
+    padding: 0px !important;
+    color: rgba(0, 0, 0, .68);
+    border-left: 4px solid #e6e6e6;
+    background-color: #f8f8f8;
+}
+
+div.list div.bq div.p {
+    padding: 4px 12px 4px 12px;
+    text-align: justify;
+}
+
+div.list div.bq div[data-type="NodeHeading"] {
+    margin-top: 4px;
+}
+
+
+/* ——————————————————————————给引用加上颜色后的外观样式———————————————————————————— */
 /* 设置统一的格式 */
 
 .bq[style*="background-color: var(--b3-card"] {
@@ -96,16 +126,3 @@
     border-bottom: 0.1em solid #2ed573;
     border-top: 0.1em solid rgba(255, 255, 255, 0.6);
 }
-
-
-
-/* 设置右下角字体 */
-
-/* .bq[style*="color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"]::after {
-    content: "1";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    font-size: 100px;
-    color: rgba(255, 255, 255, 0.5);
-} */

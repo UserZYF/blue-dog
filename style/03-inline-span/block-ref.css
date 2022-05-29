@@ -3,8 +3,7 @@
 /* 设置引用块格式 */
 .protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
     color: #175199;
-    font-weight: bold;
-    /* background-color: #0066ff1a; */
+    font-weight: 550;
     padding: 1px 3px;
     border-radius: 4px;
 }
@@ -13,29 +12,15 @@
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
     color: rgba(128, 128, 128, 0.6);
     content: "[[";
-    /* font-family: var(--b3-font-family-code); */
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
     color: rgba(128, 128, 128, 0.6);
     content: "]]";
-    /* font-family: var(--b3-font-family-code); */
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]:hover {
     background-color: #0066ff1a;
 }
-
-
-
-/* 去掉h1-h6标题上块引用的下划线，感谢二群群友123的建议 */
-/* .h1 span[data-type='block-ref'],
-.h2 span[data-type='block-ref'],
-.h3 span[data-type='block-ref'],
-.h4 span[data-type='block-ref'],
-.h5 span[data-type='block-ref'],
-.h6 span[data-type='block-ref'] {
-    border-bottom: 1px solid transparent !important;
-} */
 
 /* ------------------------------------------------块引用 END------------------------------------------------- */

@@ -1,16 +1,15 @@
 /* -----------------------------------------超链接 a----------------------------------- */
 
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty) {
-    border-bottom: 0.1em solid #0066ff;
+    text-decoration: 0.05em solid #0066ff underline;
+    text-underline-offset: 2px;
     color: var(--b3-theme-on-background);
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty)::before {
-    content: "↗";
-    font-family: var(--b3-font-family-code);
-    color: #0066ff;
-    margin-right: 6px;
+.protyle-wysiwyg [data-node-id] span[data-type="a"]:hover {
+    border-bottom-color: transparent !important;
 }
+
 
 /* 集市中说明文档链接样式 */
 .item__readme.b3-typography a {
@@ -21,11 +20,6 @@
     text-decoration: none;
 }
 
-/* .item__main a:hover,
-.protyle-wysiwyg [data-node-id] span[data-type='a']:hover {
-    border-bottom-color: transparent;
-    text-decoration: none;
-} */
 
 /* ————————————————————标题上的链接去掉下划线，2群群友123的建议———————————————————— */
 .h1 span[data-type="a"],
@@ -34,14 +28,8 @@
 .h4 span[data-type="a"],
 .h5 span[data-type="a"],
 .h6 span[data-type="a"] {
-    border-bottom: 1px solid transparent !important;
+    border-bottom-color: transparent !important;
 }
-
-/* ————————————————————正文中的超链接保持原来的颜色———————————————————— */
-/* .item__main a,
-.p [data-type="a"] {
-    color: var(--b3-theme-primary) !important;
-} */
 
 
 /* -----------------------------------------超链接 END----------------------------------- */

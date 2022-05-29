@@ -43,6 +43,7 @@ ul.fn__flex.layout-tab-bar {
     box-shadow: none !important;
     border-radius: 0px;
     border: 1px solid transparent !important;
+
 }
 
 /* 设置当前标签页文字样式 */
@@ -55,6 +56,7 @@ ul.fn__flex.layout-tab-bar {
     color: white;
 }
 
+/* 去掉默认主题的相关设置 */
 .layout-tab-bar .item:not(:last-child) {
     box-shadow: none;
 }
@@ -72,16 +74,23 @@ ul.fn__flex.layout-tab-bar {
 
 
 /* 去掉标签页上面的emoji */
-.layout-tab-bar .item__icon {
+/* .layout-tab-bar .item__icon {
     display: none;
-}
+} */
 
+/* 给钉住的页面增加emoji图标 */
 li.item.item--pin::after {
     content: "📌";
     font-size: 0.7em;
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 1px;
+    right: 2px;
+}
+
+/* 将标签页上的emoji调小 */
+.layout-tab-bar .item__icon>img, .layout-tab-bar .item__icon>svg {
+    height: 16px;
+    width: 16px;
 }
 
 /* --------------------------------------------------标签页 END--------------------------------------------- */

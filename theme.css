@@ -8,6 +8,10 @@
 @import url("style/07-others/begin-setting.css");
 /* 引入空行提示 */
 @import url("style/07-others/empty-letter.css");
+/* 引入网址链接前的图标相关代码 */
+@import url("style/link-icon.css");
+/* 给网址链接设置颜色 */
+@import url("style/link-icon-color.css");
 
 
 /* ————————————————————界面修改———————————————————— */

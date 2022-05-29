@@ -1,3 +1,60 @@
+/* 分栏 */
+.b3-menu.b3-list.b3-list--background.hint--menu {
+    column-count: auto;
+    column-width: 148px !important;
+    column-gap: 5px;
+    min-width: 50vw !important;
+    max-height: 480px !important;
+    border: var(--b3-border-column);
+    padding: 4px;
+}
+
+/* 取消显示分割线 */
+.b3-menu.b3-list.b3-list--background .b3-menu__separator {
+    display: none;
+}
+
+
+/* 设置单个项目 */
+button.b3-list-item.b3-list-item--two.fn__block {
+    /* display: flex; */
+    font-size: 90%;
+    border: var(--b3-border-column-item);
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 2px 8px !important;
+    margin-bottom: 0.1em;
+    /* overflow: hidden; */
+}
+
+/* 设置图标颜色 */
+button.b3-list-item.b3-list-item--two.fn__block .b3-list-item__graphic {
+    color: gray;
+    position: absolute;
+    top: 8px;
+}
+
+/* 鼠标悬浮时更改图标颜色 */
+button.b3-list-item.b3-list-item--two.fn__block:hover .b3-list-item__graphic {
+    color: var(--b3-font-color-hover);
+}
+
+/* 设置文本颜色 */
+button.b3-list-item.b3-list-item--two.fn__block .b3-list-item__text {
+    vertical-align: middle;
+    padding-left: 18px;
+    /* -webkit-line-clamp: 1 !important;
+    display: -webkit-box; */
+}
+
+/* 快捷键大小 */
+button.b3-list-item.b3-list-item--two.fn__block .b3-menu__accelerator {
+    font-size: 80%;
+    color: var(--b3-font-color-gray-tm);
+    font-weight: bold;
+    font-family: var(--b3-font-family-code);
+}
+
 /* ---------------------------左上方点击更多按钮弹出的选择菜单相关设置----------------------- */
 .protyle-util,
 .b3-menu, .b3-menu .b3-menu__submenu {
@@ -22,7 +79,7 @@
     line-height: 1.5em;
     color: #80808080;
     padding-bottom: 4px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.08);
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.08); */
 }
 
 /* 快捷键大小 */
