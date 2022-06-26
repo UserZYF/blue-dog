@@ -1,12 +1,15 @@
 /* ------------------------------------------------更改空行提示----------------------------------------- */
-.protyle-wysiwyg [data-node-id]:not(.code-block)>[spellcheck="false"]:focus:empty:after {
-    content: "输入内容" !important;
+
+/* 空白提示 */
+.protyle-wysiwyg [data-node-id]:not(.code-block)>[contenteditable][spellcheck]:empty:after {
+    /* 空段落 */
+    content: "\>";
     color: var(--b3-font-color-empty);
 }
 
 .protyle-wysiwyg [data-node-id] [spellcheck="false"]:empty:after {
     color: inherit;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 /* 空列表出现提示 */

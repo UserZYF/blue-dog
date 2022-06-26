@@ -104,32 +104,32 @@
 }
 
 .protyle-wysiwyg [data-node-id].h1::before {
-    content: ".";
+    content: "#";
     color: var(--b3-font-color1);
 }
 
 .protyle-wysiwyg [data-node-id].h2::before {
-    content: "..";
+    content: "##";
     color: var(--b3-font-color2);
 }
 
 .protyle-wysiwyg [data-node-id].h3::before {
-    content: "...";
+    content: "###";
     color: var(--b3-font-color3);
 }
 
 .protyle-wysiwyg [data-node-id].h4::before {
-    content: "....";
+    content: "####";
     color: var(--b3-font-color4);
 }
 
 .protyle-wysiwyg [data-node-id].h5::before {
-    content: ".....";
+    content: "#####";
     color: var(--b3-font-color5);
 }
 
 .protyle-wysiwyg [data-node-id].h6::before {
-    content: "......";
+    content: "######";
     color: var(--b3-font-color6);
 }
 
