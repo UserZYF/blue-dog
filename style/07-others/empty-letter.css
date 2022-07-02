@@ -10,7 +10,7 @@
 .protyle-wysiwyg [data-node-id] [spellcheck="false"]:empty:after {
     /* color: inherit; */
     color: var(--b3-font-color-empty);
-    opacity: 0.2;
+    opacity: 0.3;
 }
 
 /* 空列表出现提示 */
