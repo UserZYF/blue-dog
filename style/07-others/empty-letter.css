@@ -8,8 +8,9 @@
 }
 
 .protyle-wysiwyg [data-node-id] [spellcheck="false"]:empty:after {
-    color: inherit;
-    opacity: 0.7;
+    /* color: inherit; */
+    color: var(--b3-font-color-empty);
+    opacity: 0.2;
 }
 
 /* 空列表出现提示 */
