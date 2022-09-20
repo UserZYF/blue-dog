@@ -3,11 +3,8 @@
 .b3-button--text,
 .b3-button--cancel,
 .b3-button--outline {
-    border-radius: var(--b3-border-radius-noraml);
     background-color: var(--b3-theme-hover2);
     color: var(--b3-theme-primary);
-    /* border: 0.05em solid var(--b3-theme-primary); */
-    /* box-sizing: border-box; */
 }
 
 /* ————————————————————鼠标悬浮时按钮样式———————————————————— */
@@ -19,9 +16,60 @@
 .b3-button--outline:focus {
     transition: all 0.1s ease-in-out;
     color: white;
-    /* border: 1px solid var(--b3-theme-primary); */
     background-color: var(--b3-theme-primary);
-    /* box-sizing: border-box; */
 }
 
 /* -------------------------------------------------------按钮样式 END------------------------------------------------------- */
+
+
+/* 有外框的按钮取消显示外框 */
+.b3-button--outline {
+    box-shadow: none;
+}
+
+.b3-button--outline:hover,
+.b3-button--outline:focus {
+    box-shadow: none;
+}
+
+
+/* ----------------------------------------------------设置界面on/off按钮样式------------------------------------------ */
+/* ————————————————————开启前———————————————————— */
+/* 01 轨道（包括开启后的） */
+.b3-switch {
+    height: 18px;
+    width: 36px;
+    border-radius: 50px;
+    outline: 1px solid #bfbfbf;
+    background-color: #8080802b;
+}
+
+/* 02 按钮 */
+.b3-switch:after {
+    top: 0px;
+    left: 0px;
+    background-color: rgb(161, 161, 161);
+    border: none;
+}
+
+
+/* ————————————————————开启后———————————————————— */
+/* 01 轨道 */
+/* .b3-switch:checked {
+
+} */
+/* 02 按钮 */
+.b3-switch:checked:after {
+    background-color: white;
+}
+
+/* ————————————————————取消鼠标悬浮时产生的大灰圆背景颜色———————————————————— */
+.b3-switch:focus:not(:disabled):before {
+    background-color: transparent !important;
+}
+
+.b3-switch:before {
+    background-color: transparent !important;
+}
+
+/* ----------------------------------------------------设置界面on/off按钮样式 END------------------------------------------ */

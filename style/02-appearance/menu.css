@@ -1,0 +1,17 @@
+/* 菜单和子菜单 */
+.b3-menu,
+.b3-menu__submenu {
+    border-radius: var(--b3-border-radius-noraml);
+    background-color: white !important;
+}
+
+/* 设置menu中item背景颜色 */
+.b3-menu .b3-menu__item {
+    background-color: white;
+}
+
+/* 鼠标hover时背景颜色 */
+.protyle-util .b3-list-item:hover,
+.b3-menu .b3-menu__item:hover {
+    background-color: var(--b3-theme-tm-gray) !important;
+}

@@ -129,6 +129,11 @@ strong[style="background-color: var(--b3-font-background13);"]:hover {
 
 /* ---------------------------------------修改文字更多样式中的字体效果----------------------------------------- */
 /* ———————————————修改字体样式和下划线—————————————————— */
+strong[style="color: var(--b3-font-color8);"] {
+    font-weight: inherit;
+    color: #7a878b70 !important;
+}
+
 strong[style="color: var(--b3-font-color9);"] {
     font-family: "宋体" !important;
     color: inherit !important;
@@ -146,18 +151,21 @@ strong[style="color: var(--b3-font-color11);"] {
 }
 
 strong[style="color: var(--b3-font-color12);"] {
-    /* text-decoration: underline dashed gray;
-    text-underline-offset: 4px; */
     color: inherit !important;
     font-size: 1.3em;
+    font-weight: inherit;
 }
 
 strong[style="color: var(--b3-font-color13);"] {
-    /* text-decoration: underline wavy gray;
-    text-underline-offset: 3px; */
     color: transparent !important;
-    background-color: #0066ff !important;
-    border-radius: 4px;
+    background-color: #d5d5d6 !important;
+    border-radius: 2px;
+    font-weight: inherit;
+}
+
+strong[style="color: var(--b3-font-color13);"]:hover {
+    color: #d5d5d6 !important;
+    background-color: transparent !important;
 }
 
 /* ---------------------------------------修改文字更多样式中的字体效果 END----------------------------------------- */
@@ -228,7 +236,7 @@ strong[style="color: var(--b3-font-color13);"] {
 
 .b3-color__square[data-type="color"][style="background-color:var(--b3-font-color8)"]:before {
     content: "灰";
-    color: var(--b3-font-color8);
+    color: #7a878b70;
 }
 
 /* 设置字体样式 */
@@ -258,9 +266,8 @@ strong[style="color: var(--b3-font-color13);"] {
 }
 
 .b3-color__square[data-type="color"][style="background-color:var(--b3-font-color13)"] {
-    content: url("../../src/zhihu.svg");
     color: transparent !important;
-    background-color: #0066ff !important;
+    background-color: #d5d5d6 !important;
 }
 
 /* ——————————————————————为样式中13种背景设置格式—————————————————————— */

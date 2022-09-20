@@ -9,6 +9,7 @@
     /* ————————————————————透明色———————————————————— */
     --b3-theme-tm1: #0066ff4d;
     --b3-theme-tm2: #0066ff1a;
+    --b3-theme-tm-gray: #80808034;
 
     /* ————————————————————悬浮色———————————————————— */
     --b3-theme-hover: #b2d1ff;
@@ -59,8 +60,8 @@
     --b3-theme-on-error: white;
 
     /* 字体 */
-    --b3-font-family: "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --b3-font-family-code: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Liberation Mono", "Courier New", monospace;
+    --b3-font-family: "D-DIN", "MiSans", "GlowSansSC", "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --b3-font-family-code: "Arvo", "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Liberation Mono", "Courier New", monospace;
     --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
     --b3-font-family-graph: mononoki;
     --b3-font-family-math: KaTeX_Math;
@@ -69,7 +70,7 @@
     --b3-border-color: rgba(128, 128, 128, 0.1);
 
     /* 默认滚动条 */
-    --b3-scroll-color: rgba(128, 128, 128, 0.2);
+    --b3-scroll-color: #e6e6e6;
     /* 奥运背景卡片滚动条 */
     --b3-scroll-color-card: #ffffffb3;
 
@@ -137,6 +138,14 @@
     --b3-font-background11: #17a2b8;
     --b3-font-background12: #28a745;
     --b3-font-background13: transparent;
+
+    --b3-h1-after: #fbd2d480;
+    --b3-h2-after: #fce1cd80;
+    --b3-h3-after: #fcf4cc80;
+    --b3-h4-after: #cce7e080;
+    --b3-h5-after: #cde3f480;
+    --b3-h6-after: #dbdcf480;
+
 
     /* PDF标注颜色 */
     --b3-pdf-sidebar-width: 200px;
@@ -215,7 +224,7 @@
     --b3-protyle-inline-link-color: transparent;
     --b3-protyle-inline-link-hover-color: red;
     /* 高亮颜色/标记颜色 */
-    --b3-protyle-inline-mark-background: #fef852;
+    --b3-protyle-inline-mark-background: #fffcb4;
     --b3-protyle-inline-mark-color: black;
     /* 标签颜色 */
     --b3-protyle-inline-tag-background: var(--b3-theme-hover2);
@@ -245,7 +254,7 @@
     --b3-tab-custom-background: #e4ebec;
 
     /* ————————————————————圆角大小———————————————————— */
-    --b3-border-radius-noraml: 4px;
+    --b3-border-radius-noraml: 2px;
     --b3-border-radius-half-round: 50px;
     --b3-border-radius-round: 50%;
     --b3-border-radius-none: 0px;
@@ -253,7 +262,7 @@
     --b3-border-radius-math: 0px 0px 3px 3px;
 
     /* ————————————————————边框—————————————————— */
-    --b3-border-color1: #cfcece;
+    --b3-border-color1: #e9e9e9;
     --b3-tab-bar-border-color: #b8b8b8;
     --b3-border-normal: 1px solid #cfcece;
     --b3-border-wider: 2px solid #cfcece;

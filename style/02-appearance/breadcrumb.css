@@ -1,18 +1,12 @@
 /* -------------------------------------------------面包屑导航样式-------------------------------------------- */
 .protyle-breadcrumb {
     color: gray;
-    background-color: #f2f2f2;
+    background-color: white;
     font-size: 14px !important;
     height: 26px;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 6px;
-    margin-left: 6px;
-    margin-right: 6px;
-    border: 1px solid var(--b3-border-color);
-    border-radius: 4px !important;
-    padding-top: 0px;
+    border-top: 2px solid #e6e6e8;
+    border-bottom: 1px solid #e6e6e8;
 }
 
 .protyle-breadcrumb__bar {
@@ -29,17 +23,17 @@
     background-color: white;
 }
 
-.protyle-content {
+/* .protyle-content {
     box-shadow: var(--b3-protyle-content-shadow);
-}
+} */
 
 
 /* -------------------------------------------------面包屑导航样式 END-------------------------------------------- */
 
 /* 调整面包屑条目颜色（依次为符号icon，小三角标志，文字颜色） */
-svg.popover__block,
-.protyle-breadcrumb__arrow,
-.protyle-breadcrumb__item {
+.protyle-breadcrumb svg.popover__block,
+.protyle-breadcrumb .protyle-breadcrumb__arrow,
+.protyle-breadcrumb .protyle-breadcrumb__item {
     color: #55555a4d;
 }
 

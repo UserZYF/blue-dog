@@ -1,19 +1,58 @@
-/* 隐藏左上角设置按钮，鼠标悬浮时显示 */
-#toolbar .toolbar__item svg {
+.toolbar {
+    background-color: #f3f5f7;
+    margin-bottom: -22px;
+    z-index: 99;
     opacity: 0;
+    transition: opacity 300ms;
+    transition-delay: 500ms;
 }
 
-#toolbar:hover svg {
+.toolbar:hover {
     opacity: 1;
+    transition: all 300ms;
 }
-
 
 /* 给左侧dock栏设置右边框 */
 div#dockLeft {
-    border-right: 1px solid var(--b3-border-color);
+    background-image: linear-gradient(to right, #75a7f1, #65a3ff);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: calc(100% - 15px);
 }
+
+
+
+div#dockLeft svg {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+div#dockLeft .dock__item--active svg {
+    color: white !important;
+}
+
+div#dockLeft .dock__item:hover {
+    background-color: transparent;
+}
+
 
 /* 给右侧dock栏设置左边框 */
 div#dockRight {
-    border-left: 1px solid var(--b3-border-color);
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: calc(100% - 15px);
+}
+
+
+.status {
+    background-color: white !important;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    border-top-left-radius: 5px;
+}
+
+.status #barDock>.b3-menu {
+    left: unset !important;
+    right: 5em;
 }

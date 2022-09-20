@@ -1,11 +1,9 @@
 ### 主题特色
 - 采用经典的双链样式，[[双向连接]]，带给大家熟悉的操作体验
-- 各级标题上方采用"..."进行标识，便于看出标题级别
-- 当前标签页采用与360极速浏览器相同的蓝色渐变设计，突出当前标签页
-- 面包屑的设计类似于浏览器中的“地址栏”，聚焦起来更加明显
+- 设计参考QQ浏览器，包括标签页和面包屑
 - 超级块之间的间隔拉大，更加美观
 - 自定义属性和 zhang-light 主题一致
-- 隐藏思源笔记的顶栏按钮，鼠标悬浮可以显示
+- 隐藏思源笔记的顶栏按钮，鼠标悬浮可以显示（代码来自于Roy制作的notion-theme主题）
 - 加入集市中"abbj"设计的搜索栏左右分栏的代码，搜索起来更方便
 - 网址链接前面加入网站图标，并且链接文字颜色与网站图标颜色一致
 - 配色非常的好看
@@ -13,28 +11,17 @@
   - 给引用添加外观中的4种样式颜色，即可出现专属便利贴
 
 
-### 主题展示
-
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h1d3thq6j4j31hc0smwlr.jpg "标题样式和折叠标题样式")
-
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h2pdq9m2soj31hc0sm477.jpg)
-
-![Snipaste_2022-05-29_10-59-01.png](https://tva1.sinaimg.cn/large/0082QUidly1h2pdvzs2ddj31hc0smn52.jpg)
-
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h2pdtq0occj31hc0smwm3.jpg)
-
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h1d436qeftj31hc0smtep.jpg "引用便利贴样式")
-
-![image.png](https://tva1.sinaimg.cn/large/0082QUidly1h1d47k9tjoj31hc0sm159.jpg)
-
-![Snipaste_2022-05-29_16-52-28.png](https://tva1.sinaimg.cn/large/0082QUidly1h2pdutxbifj31hc0smh9e.jpg)
-
-![Snipaste_2022-05-29_10-59-16.png](https://tva1.sinaimg.cn/large/0082QUidly1h2pdwt24joj31hc0sm490.jpg)
-
-![Snipaste_2022-05-29_11-01-51.png](https://tva1.sinaimg.cn/large/0082QUidly1h2pdxaqnxsj31hc0smtj5.jpg)
-
-
 ### 更新进度
+#### 0.26
+- 隐藏顶栏
+- 修改高亮颜色
+- 主题文件夹中附带字体，免安装
+- 修改默认的超链接的图标样式
+- 修改待办事项样式
+- 取消`[[`分栏
+- 修改标签样式
+- 修改悬浮工具栏样式
+- 新增列表转看板功能
 
 #### 0.25
 
@@ -71,4 +58,22 @@
 - 增加列表转导图，列表转表格的按钮
 - 感谢 Roy，九炎 的列表转表格功能的代码和 js 脚本
 
+### 感谢列表
 
+| 主题           | 作者     | 功能                                  |
+| -------------- | -------- | ------------------------------------- |
+| notion-theme   | Roy      | 顶栏，js 功能，列表转表格，列表转导图 |
+| Tsundoku Light | Achuan-2 | 网址链接前面 icon                     |
+| Rem Craft      | 莽撞人   | 文档树辅助线                          |
+| naive          | 九炎     | 标签页新建按钮跟随最后一个标签页      |
+| -              | 阿白笔记 | Ctrl+P 左右分栏                       |
+
+### 字体版权
+
+- 全都为免费可商用字体
+
+| 名称   | 网站                                                         | 备注     |
+| ------ | ------------------------------------------------------------ | -------- |
+| MiSans | https://web.vip.miui.com/page/info/mio/mio/detail?postId=33707541 | 中文字体 |
+| D-DIN  | https://www.fontsquirrel.com/fonts/d-din                     | 英文字体 |
+| Arvo   | https://www.fontsquirrel.com/license/arvo                    | 代码字体 |

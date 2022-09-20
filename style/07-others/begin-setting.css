@@ -1,29 +1,30 @@
 /* ————————————————————所有边距初始化———————————————————— */
-* {
+/* * {
     margin: 0px;
     padding: 0px;
-}
+} */
 
 /* ----------------------------------------------------块添加圆角------------------------------------------- */
-.protyle-wysiwyg [data-node-id] {
+/* .protyle-wysiwyg [data-node-id] {
     border-radius: var(--b3-border-radius-none);
-}
+} */
 
 /* 块标提示不被窗口线遮挡 */
-.protyle-gutters {
+/* .protyle-gutters {
     z-index: 3;
-}
+} */
 
 /* ————————————————————设置滚动条样式——————————————————__ */
 ::-webkit-scrollbar-thumb {
     background-color: var(--b3-scroll-color);
-    border-radius: var(--b3-border-radius-half-round);
+    border-radius: 1px;
 }
 
 /* ————————————————————修改滚动条宽度———————————————————— */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 8px;
-}
+    z-index: 3 !important;
+} */
 
 /* ————————————————————去掉软件的边框线———————————————————— */
 body.body--win32 {
@@ -31,7 +32,23 @@ body.body--win32 {
 }
 
 /* ————————————————————表单设置不能拖拽缩放———————————————————— */
-textarea.b3-text-field.fn__flex-1 {
+/* textarea.b3-text-field.fn__flex-1 {
     border: 1px solid transparent;
     resize: none;
+} */
+
+
+/* 滚动条不占用空间 */
+/* .fn__flex-1 {
+    overflow: overlay;
+} */
+
+/* 文档树滚动条，鼠标悬浮时才显示 */
+.fn__flex-1::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    transition: background-color 1s ease;
+}
+
+.fn__flex-1:hover::-webkit-scrollbar-thumb {
+    background-color: var(--b3-scroll-color);
 }

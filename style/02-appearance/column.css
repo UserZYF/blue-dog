@@ -1,0 +1,54 @@
+/* ----------------------------------------------------分栏代码-------------------------------------------------- */
+
+/* ————————————————————01 /分栏———————————————————— */
+.hint--menu {
+    column-count: 4;
+    column-width: 148px !important;
+    column-gap: 5px;
+    min-width: 50vw !important;
+    max-height: 480px !important;
+    border: var(--b3-border-column);
+    padding: 4px;
+    background-color: white;
+}
+
+/* 取消显示分割线 */
+.hint--menu .b3-menu__separator {
+    display: none;
+}
+
+/* ————————————————————02 [[选择———————————————————— */
+.b3-menu.b3-list.b3-list--background {
+    padding: 4px;
+    background-color: white;
+}
+
+/* 设置输入框的圆角大小 */
+.b3-menu input.b3-text-field {
+    border-radius: 1px;
+}
+
+/* 设置文档路径的文字颜色 */
+.b3-menu:not(.hint--menu).b3-list.b3-list--background .b3-list-item__meta {
+    color: #80808080;
+    padding-bottom: 2px;
+}
+
+/* ————————————————————03 设置单个项目（两个选择器共用）———————————————————— */
+.b3-menu .b3-list-item {
+    font-size: 90%;
+    border: var(--b3-border-column-item);
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 2px 8px !important;
+    margin-bottom: 0.1em;
+}
+
+
+.b3-list.b3-list--background.b3-menu.hint--menu>.emojis {
+    /* 表情菜单 */
+    /* REF https: //github.com/siyuan-note/siyuan/issues/4575#issuecomment-1152490468 */
+    column-span: all;
+}
+
+/* ----------------------------------------------------分栏代码 End-------------------------------------------------- */

@@ -25,7 +25,7 @@
 .protyle-wysiwyg [data-node-id] a[href ^="http"]::before,
 .b3-typography a[href ^="http"]::before {
     content: "";
-    background-image: url('../icon4Tsundoku/link2.svg');
+    background-image: url('../src/link.png');
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="weibo.com"]:not(:empty)::before,

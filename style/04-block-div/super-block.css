@@ -6,27 +6,25 @@
 } */
 
 /* —————————————————————————————————————次超级块大小—————————————————————————————————————— */
-.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"]>div,
-.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"]>div {
-    margin: 0.1em 2em 0.1em 0.1em;
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"] .sb {
+    margin: 0.1em 0em 0.1em 0.1em;
 }
 
-.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"]>div:nth-last-child(2),
-.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"]>div:nth-last-child(2) {
-    margin-right: 0;
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"] .sb:nth-last-child(2) {
+    margin-right: 0.1em;
 }
 
 /* ——————————————————————————————————————每个子超级块—————————————————————————————————————— */
-/* .protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"]>div {
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"]>[data-node-id] {
     border-radius: var(--b3-border-radius-none);
     box-sizing: border-box;
     margin: 0.1em 0 0.1em 0.1em;
-} */
+}
 
 /* 最后一个子超级块不设置右边距 */
-/* .protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"]>div:nth-last-child(2) {
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"]>[data-node-id]:nth-last-child(2) {
     margin-right: 0.1em;
-} */
+}
 
 
 

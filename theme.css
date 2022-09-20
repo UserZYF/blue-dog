@@ -17,8 +17,6 @@
 /* ————————————————————界面修改———————————————————— */
 /* 修改上左右dock栏样式 */
 @import url("style/02-appearance/dock.css");
-/* 修改正文A4纸大小 */
-@import url("style/02-appearance/A4.css");
 /* 修改文档树样式 */
 @import url("style/02-appearance/file-tree.css");
 /* 修改标签页样式 */
@@ -29,14 +27,16 @@
 @import url("style/02-appearance/mouse.css");
 /* 修改选中文字后弹出的悬浮工具栏的样式 */
 @import url("style/02-appearance/toolbar.css");
-/* 修改弹出菜单的样式 */
-@import url("style/02-appearance/meun.css");
+/* 修改菜单的样式 */
+@import url("style/02-appearance/menu.css");
+/* 修改弹出窗口的样式 */
+@import url("style/02-appearance/dialog.css");
+/* 修改分栏 */
+@import url("style/02-appearance/column.css");
 /* 修改按钮样式 */
 @import url("style/02-appearance/button.css");
 /* 修改设置界面样式 */
 @import url("style/02-appearance/setting-option.css");
-/* 修改警告界面样式 */
-@import url("style/02-appearance/warning-color.css");
 
 
 /* ————————————————————行内元素———————————————————— */
@@ -92,8 +92,12 @@
 @import url("style/05-custom-function-for-file/custom-function-for-file.css");
 /* 增加块的自定义属性 */
 @import url("style/06-custom-function-for-block/custom-function-for-block.css");
+/* 增加列表转表格代码 */
+@import url("style/list-to-table.css");
 /* 增加 Roy 的列表转思维导图代码 */
 @import url("style/list-to-map.css");
+/* 增加 Roy 的列表转看板代码 */
+@import url("style/list-to-board.css");
 
 /* ————————————————————引入自定义设置———————————————————— */
 /* 搜索界面左右排版 */
@@ -102,3 +106,21 @@
 @import url(/widgets/custom.css);
 
 /* ----------------------------------------------------引入结束---------------------------------------------------------- */
+
+@font-face {
+    font-family: 'D-DIN';
+    font-style: normal;
+    src: url('fonts/D-DIN.otf');
+}
+
+@font-face {
+    font-family: 'Arvo';
+    font-style: normal;
+    src: url('fonts/Arvo-Regular-5.ttf');
+}
+
+@font-face {
+    font-family: 'MiSans';
+    font-style: normal;
+    src: url('fonts/MiSans-Regular.ttf');
+}

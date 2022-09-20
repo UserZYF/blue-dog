@@ -2,5 +2,6 @@
 .b3-typography s,
 .protyle-wysiwyg s {
     text-decoration: line-through;
-    text-decoration-color: gray;
+    text-decoration-color: #55555a3f;
+    color: #55555a44;
 }

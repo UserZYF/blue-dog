@@ -13,15 +13,22 @@ ul.fn__flex.layout-tab-bar {
 
 
 /* 标签页相关设置 */
-.layout-tab-bar .item {
+.layout-tab-bar .item:not(.item--readonly) {
     position: relative;
-    background-color: var(--b3-tab-background);
-    /* flex: none; */
+    background-color: #f3f3f5;
+    flex: none;
     /* 设置标签页的宽度 */
     /* max-width: 16em; */
     min-width: 12em;
-    border: 1px solid #80808028;
+    border-right: 1px solid #e6e6e8;
     border-radius: 0px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+.layout-tab-bar li.item.item--readonly {
+    padding-top: 5px;
+    padding-bottom: 4px;
 }
 
 
@@ -42,7 +49,7 @@ ul.fn__flex.layout-tab-bar {
     background-image: linear-gradient(to right, #75a7f1, #65a3ff);
     box-shadow: none !important;
     border-radius: 0px;
-    border: 1px solid transparent !important;
+    /* border: 1px solid transparent !important; */
 
 }
 
@@ -78,19 +85,64 @@ ul.fn__flex.layout-tab-bar {
     display: none;
 } */
 
-/* 给钉住的页面增加emoji图标 */
-li.item.item--pin::after {
-    content: "📌";
-    font-size: 0.7em;
-    position: absolute;
-    top: 1px;
-    right: 2px;
-}
+
 
 /* 将标签页上的emoji调小 */
 .layout-tab-bar .item__icon>img, .layout-tab-bar .item__icon>svg {
     height: 16px;
     width: 16px;
+    margin-top: -1px;
+}
+
+
+
+
+
+/* 为钉住的标签页右上角增加大头钉图标 */
+li.item.item--pin:not(.item--focus):after {
+    content: "";
+    content: url("../../src/pin.svg");
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    /* opacity: 0.3; */
+    filter: grayscale(100%);
+    rotate: 45deg;
+}
+
+li.item.item--pin.item--focus:after {
+    content: "";
+    content: url("../../src/pin-focus.svg") !important;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    rotate: 45deg;
 }
 
 /* --------------------------------------------------标签页 END--------------------------------------------- */
+
+/* v2.1.14引入 */
+.layout-tab-bar .item:not(:last-child), .layout-tab-bar .item:last-child:not(.item--focus):not(.item--readonly) {
+    box-shadow: none;
+}
+
+
+
+/* 设置新建标签页位置跟随最后一个标签页，v2.1.14 代码来自于九炎，问题来自于赐我一胖 */
+ul.fn__flex.layout-tab-bar.fn__flex-1 {
+    flex: none;
+    max-width: calc(100% - 64px);
+}
+
+ul.layout-tab-bar {
+    flex: 1;
+}
+
+/* 设置标签页关闭按钮悬浮时的背景颜色 */
+.layout-tab-bar .item__close:hover svg {
+    background-color: rgba(255, 255, 255, 0.5);
+}
