@@ -1,176 +1,82 @@
-/* ———————————————自定义13种背景样式，前7种为彩虹色—————————————————— */
-/* strong[style="background-color: var(--b3-font-background1);"] {
-    border-bottom: 0.1em solid var(--b3-font-color1);
-}
+/* ————————————————————————————color字体颜色———————————————————————————— */
 
-strong[style="background-color: var(--b3-font-background2);"] {
-    border-bottom: 0.1em solid var(--b3-font-color2);
-}
-
-strong[style="background-color: var(--b3-font-background3);"] {
-    border-bottom: 0.1em solid var(--b3-font-color3);
-}
-
-strong[style="background-color: var(--b3-font-background4);"] {
-    border-bottom: 0.1em solid var(--b3-font-color4);
-}
-
-strong[style="background-color: var(--b3-font-background5);"] {
-    border-bottom: 0.1em solid var(--b3-font-color5);
-}
-
-strong[style="background-color: var(--b3-font-background6);"] {
-    border-bottom: 0.1em solid var(--b3-font-color6);
-}
-
-strong[style="background-color: var(--b3-font-background7);"] {
-    border-bottom: 0.1em solid var(--b3-font-color7);
-}
-
-strong[style="background-color: var(--b3-font-background8);"] {
-    border-bottom: 0.1em solid var(--b3-font-color8);
-} */
-
-div[style="background-color: var(--b3-font-background9);"],
-strong[style="background-color: var(--b3-font-background9);"] {
-    color: var(--b3-font-color9);
-}
-
-div[style="background-color: var(--b3-font-background10);"],
-strong[style="background-color: var(--b3-font-background10);"] {
-    color: var(--b3-font-color10);
-}
-
-div[style="background-color: var(--b3-font-background11);"],
-strong[style="background-color: var(--b3-font-background11);"] {
-    color: var(--b3-font-color11);
-}
-
-div[style="background-color: var(--b3-font-background12);"],
-strong[style="background-color: var(--b3-font-background12);"] {
-    color: var(--b3-font-color12);
-}
-
-
-/* 为前8种后面设置数字 */
-/* strong[style="background-color: var(--b3-font-background1);"]::before,
-strong[style="background-color: var(--b3-font-background1);"]::after {
-    content: "·";
-    font-family: var(--b3-font-family-code);
-    color: var(--b3-font-color1);
-}
-
-strong[style="background-color: var(--b3-font-background2);"]::before,
-strong[style="background-color: var(--b3-font-background2);"]::after {
-    content: "·";
-    font-family: var(--b3-font-family-code);
-    color: var(--b3-font-color2);
-}
-
-strong[style="background-color: var(--b3-font-background3);"]::before,
-strong[style="background-color: var(--b3-font-background3);"]::after {
-    content: "·";
-    font-family: var(--b3-font-family-code);
-    color: var(--b3-font-color3);
-}
-
-strong[style="background-color: var(--b3-font-background4);"]::before,
-strong[style="background-color: var(--b3-font-background4);"]::after {
-    content: "·";
-    font-family: var(--b3-font-family-code);
-    color: var(--b3-font-color4);
-}
-
-strong[style="background-color: var(--b3-font-background5);"]::before,
-strong[style="background-color: var(--b3-font-background5);"]::after {
-    content: "·";
-    font-family: var(--b3-font-family-code);
-    color: var(--b3-font-color5);
-}
-
-strong[style="background-color: var(--b3-font-background6);"]::before,
-strong[style="background-color: var(--b3-font-background6);"]::after {
-    content: "·";
-    font-family: var(--b3-font-family-code);
-    color: var(--b3-font-color6);
-}
-
-strong[style="background-color: var(--b3-font-background7);"]::before,
-strong[style="background-color: var(--b3-font-background7);"]::after {
-    content: "·";
-    font-family: var(--b3-font-family-code);
-    color: var(--b3-font-color7);
-}
-
-strong[style="background-color: var(--b3-font-background8);"]::before,
-strong[style="background-color: var(--b3-font-background8);"]::after {
-    content: "·";
-    font-family: var(--b3-font-family-code);
-    color: var(--b3-font-color8);
-} */
-
-/* 设置第13个背景色为挖空效果 */
-strong[style="background-color: var(--b3-font-background13);"] {
-    color: transparent !important;
-    background-color: transparent !important;
-    border-bottom: 2px solid gray !important;
-    border-radius: var(--b3-border-radius-none) !important;
-    /* padding: 2px 0px !important; */
-    font-weight: 400 !important;
-    transition: color 0.1s ease-in-out;
-}
-
-strong[style="background-color: var(--b3-font-background13);"]:hover {
-    color: inherit !important;
-}
-
-
-/* ———————————————自定义13种背景样式，前7种为彩虹色 END—————————————————— */
-
-/* ---------------------------------------修改文字更多样式中的字体效果----------------------------------------- */
-/* ———————————————修改字体样式和下划线—————————————————— */
-strong[style="color: var(--b3-font-color8);"] {
+span[style="color: var(--b3-font-color8);"] {
     font-weight: inherit;
     color: #7a878b70 !important;
 }
 
-strong[style="color: var(--b3-font-color9);"] {
+span[style="color: var(--b3-font-color9);"] {
     font-family: "宋体" !important;
     color: inherit !important;
 }
 
-strong[style="color: var(--b3-font-color10);"] {
+span[style="color: var(--b3-font-color10);"] {
     font-family: "楷体" !important;
     color: inherit !important;
 }
 
-strong[style="color: var(--b3-font-color11);"] {
+span[style="color: var(--b3-font-color11);"] {
     font-family: "微软雅黑" !important;
     font-weight: bold;
     color: inherit !important;
 }
 
-strong[style="color: var(--b3-font-color12);"] {
+span[style="color: var(--b3-font-color12);"] {
     color: inherit !important;
     font-size: 1.3em;
     font-weight: inherit;
 }
 
-strong[style="color: var(--b3-font-color13);"] {
+span[style="color: var(--b3-font-color13);"] {
     color: transparent !important;
     background-color: #d5d5d6 !important;
     border-radius: 2px;
     font-weight: inherit;
 }
 
-strong[style="color: var(--b3-font-color13);"]:hover {
+span[style="color: var(--b3-font-color13);"]:hover {
     color: #d5d5d6 !important;
     background-color: transparent !important;
 }
 
-/* ---------------------------------------修改文字更多样式中的字体效果 END----------------------------------------- */
-/* --------------------------为更多样式中的字体增加文字提示---------------------- */
-/* ——————————————————————设置边框大小—————————————————————— */
+/* ————————————————————————————background背景颜色———————————————————————————— */
+
+div[style="background-color: var(--b3-font-background9);"],
+span[style="background-color: var(--b3-font-background9);"] {
+    color: var(--b3-font-color9);
+}
+
+div[style="background-color: var(--b3-font-background10);"],
+span[style="background-color: var(--b3-font-background10);"] {
+    color: var(--b3-font-color10);
+}
+
+div[style="background-color: var(--b3-font-background11);"],
+span[style="background-color: var(--b3-font-background11);"] {
+    color: var(--b3-font-color11);
+}
+
+div[style="background-color: var(--b3-font-background12);"],
+span[style="background-color: var(--b3-font-background12);"] {
+    color: var(--b3-font-color12);
+}
+
+/* 设置第13个背景色为挖空效果 */
+span[style="background-color: var(--b3-font-background13);"] {
+    color: transparent !important;
+    background-color: transparent !important;
+    border-bottom: 2px solid gray !important;
+    border-radius: var(--b3-border-radius-none) !important;
+    font-weight: 400 !important;
+    transition: color 0.1s ease-in-out;
+}
+
+span[style="background-color: var(--b3-font-background13);"]:hover {
+    color: inherit !important;
+}
+
+/* ————————————————————————————面板———————————————————————————— */
+/* total */
 .b3-color__square {
     height: 23px;
     width: 23px;
@@ -179,8 +85,7 @@ strong[style="color: var(--b3-font-color13);"]:hover {
     border: var(--b3-border-normal);
 }
 
-/* ——————————————————————为样式中13种字体设置格式—————————————————————— */
-/* 设置统一的字体样式 */
+/* item */
 .b3-color__square[data-type="color"] {
     position: relative;
     z-index: 2;
@@ -290,42 +195,34 @@ strong[style="color: var(--b3-font-color13);"]:hover {
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background1)"]:before {
     content: "红";
-    /* color: var(--b3-font-color1); */
 }
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background2)"]:before {
     content: "橙";
-    /* color: var(--b3-font-color2); */
 }
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background3)"]:before {
     content: "黄";
-    /* color: var(--b3-font-color3); */
 }
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background4)"]:before {
     content: "绿";
-    /* color: var(--b3-font-color4); */
 }
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background5)"]:before {
     content: "青";
-    /* color: var(--b3-font-color5); */
 }
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background6)"]:before {
     content: "蓝";
-    /* color: var(--b3-font-color6); */
 }
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background7)"]:before {
     content: "紫";
-    /* color: var(--b3-font-color7); */
 }
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background8)"]:before {
     content: "灰";
-    /* color: var(--b3-font-color8); */
 }
 
 .b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background9)"]:before {

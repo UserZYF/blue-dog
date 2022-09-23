@@ -1,5 +1,9 @@
-/* ---------------------------------------------------键盘按键kbd和行内代码设置一样的格式--------------------------------------------- */
-.b3-typography code:not(.hljs), .protyle-wysiwyg code:not(.hljs) {
+/* 行内代码 */
+.fn__code,
+.b3-typography code:not(.hljs),
+.b3-typography span[data-type~=code],
+.protyle-wysiwyg code:not(.hljs),
+.protyle-wysiwyg span[data-type~=code] {
     color: var(--b3-protyle-inline-code-color);
     background-color: var(--b3-protyle-inline-code-background);
     border-radius: var(--b3-border-radius-noraml);

@@ -56,3 +56,7 @@ div#dockRight {
     left: unset !important;
     right: 5em;
 }
+
+.status__msg {
+    display: none;
+}

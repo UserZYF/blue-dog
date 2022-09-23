@@ -60,11 +60,50 @@
     --b3-theme-on-error: white;
 
     /* 字体 */
-    --b3-font-family: "D-DIN", "MiSans", "GlowSansSC", "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --b3-font-family-code: "Arvo", "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "HarmonyOS Sans SC", 'PingFang SC', "Microsoft YaHei", "Liberation Mono", "Courier New", monospace;
-    --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
-    --b3-font-family-graph: mononoki;
-    --b3-font-family-math: KaTeX_Math;
+    --b3-font-family:
+        "D-DIN",
+        "MiSans",
+        "GlowSansSC",
+        "HarmonyOS Sans SC",
+        'PingFang SC',
+        "Microsoft YaHei",
+        "Noto Sans",
+        "Noto Sans CJK SC",
+        "Microsoft YaHei UI",
+        "WenQuanYi Micro Hei",
+        sans-serif,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --b3-font-family-code:
+        "Arvo",
+        "JetBrains Mono",
+        SFMono-Regular,
+        Menlo, Monaco,
+        Consolas,
+        "HarmonyOS Sans SC",
+        'PingFang SC',
+        "Microsoft YaHei",
+        "Liberation Mono",
+        "Courier New",
+        monospace;
+    --b3-font-family-emoji:
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Segoe UI",
+        "Apple Color Emoji",
+        "Twemoji Mozilla",
+        "Noto Color Emoji",
+        "Android Emoji";
+    --b3-font-family-graph:
+        mononoki;
+    --b3-font-family-math:
+        KaTeX_Math;
 
     /* 线条颜色 */
     --b3-border-color: rgba(128, 128, 128, 0.1);
@@ -274,7 +313,6 @@
     --b3-border-kbd: 0.1em solid rgba(128, 128, 128, 0.2);
     --b3-border-gezi: 0.05em solid #cfcece4d;
     --b3-link-underline-color: #d71a1aad;
-
 }
 
 /* ----------------------------------------------------root定义结束---------------------------------------------------- */

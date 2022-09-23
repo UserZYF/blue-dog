@@ -4,7 +4,7 @@
 }
 
 /* 给文档标题下面增加一条横线 */
-.protyle-title__input::after {
+.protyle-title__input[spellcheck="false"]::after {
     content: "";
     position: absolute;
     bottom: -0.05em;
