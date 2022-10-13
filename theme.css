@@ -1,6 +1,5 @@
 /* ----------------------------------------------------引入开始---------------------------------------------------------- */
 
-
 /* ————————————————————初始设置———————————————————— */
 /* 引入颜色和字体 */
 @import url("style/01-color-font/color-font.css");
@@ -19,6 +18,8 @@
 @import url("style/02-appearance/dock.css");
 /* 修改文档树样式 */
 @import url("style/02-appearance/file-tree.css");
+/* 设置反向链接样式 */
+@import url("style/02-appearance/sy__backlink.css");
 /* 修改标签页样式 */
 @import url("style/02-appearance/tab-bar.css");
 /* 修改面包屑样式 */
@@ -74,6 +75,8 @@
 @import url("style/04-block-div/image.css");
 /* 修改列表样式 */
 @import url("style/04-block-div/list.css");
+/* 修改待办事项样式 */
+@import url("style/04-block-div/task.css");
 /* 修改代码块样式 */
 @import url("style/04-block-div/code-block.css");
 /* 修改超级块样式 */
@@ -86,6 +89,8 @@
 @import url("style/04-block-div/NodeHeading-biaoti.css");
 /* 引入4种样式 */
 @import url("style/04-block-div/card.css");
+/* 修改批注样式 */
+@import url("style/04-block-div/inline-memo.css");
 
 /* ————————————————————自定义属性———————————————————— */
 /* 增加文档的自定义属性 */
@@ -102,6 +107,8 @@
 /* ————————————————————引入自定义设置———————————————————— */
 /* 搜索界面左右排版 */
 @import url("style/CtrlP.css");
+/* 打印样式 */
+@import url("style/print.css");
 /* 引入大家的自定义配置，放到widgets文件夹下，名称为custom.css */
 @import url(/widgets/custom.css);
 
@@ -124,3 +131,63 @@
     font-style: normal;
     src: url('fonts/MiSans-Regular.ttf');
 }
+
+
+/* ------------------------------------------------各级标题样式------------------------------------------------------- */
+
+/* h1 */
+/* https://www.bilibili.com/video/BV1XL411n77J/ */
+/* .h1 div[spellcheck="false"] {
+    padding: 4px 0px 4px 10px;
+    color: white;
+    background-color: #6ea5f7;
+    border-left: 12px solid #ffca6e;
+} */
+
+
+/* h2 */
+/* https://baike.baidu.com/item/中国/1122445 */
+.h3 div[spellcheck="false"] {
+    border-left: 12px solid var(--b3-theme-primary-lighter);
+    padding: 0px 0 0 10px;
+}
+
+.h3 div[spellcheck="false"]::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: -webkit-fill-available;
+    height: 1px;
+    top: 50%;
+    background-color: var(--b3-border-color1);
+    margin-left: 10px;
+}
+
+/* 去掉3级标题后边的横线，否则会和文本省略号冲突，导致位置错乱 */
+.h3[fold="1"] div[spellcheck="false"]::after {
+    display: none;
+}
+
+/* h3 */
+/* http://free-line-design.com/?p=482 */
+/* .h3 div[spellcheck="false"] {
+    padding: 0px 0px 0px 10px;
+    border-left: 4px solid var(--b3-theme-primary-lighter);
+} */
+
+
+
+/* .h2 div[spellcheck="false"]  {
+    border-left: 12px solid var(--b3-theme-primary-lighter);
+    padding: 0px 0 0 10px;
+}
+
+.h2 div[spellcheck="false"]::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: -webkit-fill-available;
+    height: 30px;
+    background-color: var(--b3-theme-primary-lighter);
+    margin-left: 10px;
+} */

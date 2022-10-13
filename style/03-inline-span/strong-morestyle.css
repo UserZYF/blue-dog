@@ -2,7 +2,7 @@
 
 span[style="color: var(--b3-font-color8);"] {
     font-weight: inherit;
-    color: #7a878b70 !important;
+    /* color: #7a878b70 !important; */
 }
 
 span[style="color: var(--b3-font-color9);"] {
@@ -29,13 +29,13 @@ span[style="color: var(--b3-font-color12);"] {
 
 span[style="color: var(--b3-font-color13);"] {
     color: transparent !important;
-    background-color: #d5d5d6 !important;
+    background-color: var(--b3-font-color13) !important;
     border-radius: 2px;
     font-weight: inherit;
 }
 
 span[style="color: var(--b3-font-color13);"]:hover {
-    color: #d5d5d6 !important;
+    color: var(--b3-font-color13) !important;
     background-color: transparent !important;
 }
 
@@ -43,29 +43,29 @@ span[style="color: var(--b3-font-color13);"]:hover {
 
 div[style="background-color: var(--b3-font-background9);"],
 span[style="background-color: var(--b3-font-background9);"] {
-    color: var(--b3-font-color9);
+    color: var(--b3-font-color9) !important;
 }
 
 div[style="background-color: var(--b3-font-background10);"],
 span[style="background-color: var(--b3-font-background10);"] {
-    color: var(--b3-font-color10);
+    color: var(--b3-font-color10) !important;
 }
 
 div[style="background-color: var(--b3-font-background11);"],
 span[style="background-color: var(--b3-font-background11);"] {
-    color: var(--b3-font-color11);
+    color: var(--b3-font-color11) !important;
 }
 
 div[style="background-color: var(--b3-font-background12);"],
 span[style="background-color: var(--b3-font-background12);"] {
-    color: var(--b3-font-color12);
+    color: var(--b3-font-color12) !important;
 }
 
 /* 设置第13个背景色为挖空效果 */
 span[style="background-color: var(--b3-font-background13);"] {
     color: transparent !important;
     background-color: transparent !important;
-    border-bottom: 2px solid gray !important;
+    border-bottom: 2px solid var(--b3-gray) !important;
     border-radius: var(--b3-border-radius-none) !important;
     font-weight: 400 !important;
     transition: color 0.1s ease-in-out;
@@ -85,13 +85,21 @@ span[style="background-color: var(--b3-font-background13);"]:hover {
     border: var(--b3-border-normal);
 }
 
+/* span.b3-color__square.fn__flex-center {
+    visibility: hidden;
+} */
+
+
+
 /* item */
+/* .b3-menu__item--show .b3-menu__submenu--row span[style*="color:var(--b3-font-"], */
 .b3-color__square[data-type="color"] {
     position: relative;
     z-index: 2;
     background-color: transparent !important;
 }
 
+/* .b3-menu__item--show .b3-menu__submenu--row span[style*="color:var(--b3-font-"]::before, */
 .b3-color__square[data-type="color"][style*="background-color:var(--b3-font-"]:before {
     display: inline-block;
     position: absolute;
@@ -104,6 +112,7 @@ span[style="background-color: var(--b3-font-background13);"]:hover {
 }
 
 /* 设置文字介绍 */
+.b3-menu__item--show .b3-menu__submenu--row span[style="color:var(--b3-font-color1)"]::before,
 .b3-color__square[data-type="color"][style="background-color:var(--b3-font-color1)"]:before {
     content: "红";
     color: var(--b3-font-color1);
@@ -172,7 +181,7 @@ span[style="background-color: var(--b3-font-background13);"]:hover {
 
 .b3-color__square[data-type="color"][style="background-color:var(--b3-font-color13)"] {
     color: transparent !important;
-    background-color: #d5d5d6 !important;
+    background-color: var(--b3-font-color13) !important;
 }
 
 /* ——————————————————————为样式中13种背景设置格式—————————————————————— */

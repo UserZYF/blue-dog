@@ -1,7 +1,7 @@
 /* ------------------------------------------标签 tag--------------------------------------------- */
 .protyle-wysiwyg [data-node-id] span[data-type='tag']:not(:empty) {
     color: var(--b3-theme-primary);
-    background-color: #b2d1ff6c;
+    background-color: var(--b3-protyle-inline-tag-background);
     border-radius: 6px 6px 6px 6px;
     padding: 2px 4px 2px 2px;
 }
@@ -12,7 +12,7 @@
 
 span[data-type='tag']::before {
     content: "#";
-    color: white;
+    color: var(--b3-white-black);
     display: inline-block;
     width: 1.3em;
     height: 1.3em;
@@ -21,7 +21,7 @@ span[data-type='tag']::before {
     margin-left: -0.1em;
     margin-right: 0.1em;
     border-radius: 6px;
-    background-color: #9bc1fa;
+    background-color: var(--b3-protyle-inline-tag-before);
     text-align: center;
     font-weight: bold;
 }

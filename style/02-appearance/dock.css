@@ -1,5 +1,5 @@
 .toolbar {
-    background-color: #f3f5f7;
+    background-color: var(--b3-toolbar-background);
     margin-bottom: -22px;
     z-index: 99;
     opacity: 0;
@@ -14,7 +14,7 @@
 
 /* 给左侧dock栏设置右边框 */
 div#dockLeft {
-    background-image: linear-gradient(to right, #75a7f1, #65a3ff);
+    background-image: var(--b3-dockleft-background);
     padding-top: 10px;
     padding-bottom: 5px;
     height: calc(100% - 15px);
@@ -23,11 +23,11 @@ div#dockLeft {
 
 
 div#dockLeft svg {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--b3-item-svg);
 }
 
 div#dockLeft .dock__item--active svg {
-    color: white !important;
+    color: var(--b3-item-active-svg) !important;
 }
 
 div#dockLeft .dock__item:hover {
@@ -37,7 +37,7 @@ div#dockLeft .dock__item:hover {
 
 /* 给右侧dock栏设置左边框 */
 div#dockRight {
-    background-color: white;
+    background-color: var(--b3-dockright-background);
     padding-top: 10px;
     padding-bottom: 5px;
     height: calc(100% - 15px);
@@ -45,7 +45,7 @@ div#dockRight {
 
 
 .status {
-    background-color: white !important;
+    background-color: var(--b3-status-background) !important;
     position: absolute;
     bottom: 0px;
     right: 30px;

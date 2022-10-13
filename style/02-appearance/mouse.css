@@ -12,8 +12,9 @@
 
 
 /* ————————————————————————————选中块—————————————————————————————— */
-.protyle-wysiwyg--select, .protyle-wysiwyg--select .hljs {
-    background-color: rgba(128, 128, 128, 0.08) !important;
+.protyle-wysiwyg--select, 
+.protyle-wysiwyg--select .hljs {
+    background-color: var(--b3-mouse-select-background) !important;
 }
 
 /* --------------------------------------------------鼠标样式 END----------------------------------------------- */

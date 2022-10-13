@@ -6,15 +6,23 @@
     width: 100%;
 }
 
+
+/* .protyle-wysiwyg table,
+.b3-typography table {
+    overflow-x: visible;
+    width: 80vw;
+} */
+
+/* 表格表行 */
 .b3-typography table tr,
 .protyle-wysiwyg table tr {
-    background-color: transparent;
+    background-color: var(--b3-table-tr-background);
 }
 
-/* 设置表头区域顶部边框，使表格更明显 */
+/* 设置表头背景色 */
 .protyle-wysiwyg table thead,
 .b3-typography table thead {
-    background-color: #ebebeb !important;
+    background-color: var(--b3-table-thead-background) !important;
 }
 
 /*设置表格表头样式，颜色，背景，加粗，居中对齐*/
@@ -26,25 +34,27 @@ table th {
 /* 设置表格内部边框 */
 th, td {
     min-width: 1em;
-    border: 0.05em solid #d3d3d3 !important;
+    border: 0.05em solid var(--b3-table-border-color) !important;
     border-collapse: collapse;
     color: inherit;
 }
 
-
-/* 表格奇偶行不同颜色 */
-tbody tr:nth-child(2n) {
-    background-color: transparent !important;
-}
-
+/* 奇数行 */
 tbody tr:nth-child(2n + 1) {
-    background-color: transparent !important;
+    background-color: var(--b3-table-odd-background) !important;
 }
+
+/* 偶数行 */
+tbody tr:nth-child(2n) {
+    background-color: var(--b3-table-even-background) !important;
+}
+
+
 
 /* 设置表格行悬浮高亮 */
 /* table tr:hover {
     background: var(--b3-theme-hover2) !important;
-    color: var(--b3-theme-primary) !important;
+    color: var(--b3-theme-primary);
 } */
 
 /* -------------------------------表格end------------------------------------- */

@@ -1,59 +1,59 @@
-/*————————————————————————列表转导图————————————————————————*/
-
-/*整个导图取消缩进*/
-.protyle-wysiwyg *[custom-f="dt"] {
-	outline: 2px dashed #e9e9e9;
+/* ——————————————————————————自定义样式———————————————————————————————— */
+/* 设置外边框 */
+.protyle-wysiwyg .list[custom-f="dt"] {
+	/* outline: 2px dashed #e9e9e9; */
+	width: fit-content !important;
+	overflow-x: visible;
+	margin: 10px 4px;
 }
 
+/* 设置首项底色为蓝色 */
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] {
+	background-color: #34455d;
+	color: white;
+	outline: none;
+	border-radius: 50px;
+	padding: 1px 0px 1px 8px;
+	min-width: 3em;
+	text-align: center;
+}
+
+/* 首项中修改块引用颜色 */
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='block-ref'] {
+	color: white;
+}
+
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='block-ref']::before,
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='block-ref']::after {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* 第二项颜色 */
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.list>div.li>div.p>div[spellcheck="false"] {
+	color: white;
+	background-color: #84a2ca;
+	outline: none;
+	border-radius: 50px;
+	padding: 1px 0px 1px 8px;
+	min-width: 2.5em;
+	text-align: center;
+}
+
+
+/*————————————————————————Notion主题-列表转导图————————————————————————*/
+/*整个导图取消缩进*/
 .protyle-wysiwyg *[custom-f="dt"] .li .list {
 	padding: 0px;
 	margin: 0px;
 	transition: all 0.5s;
 }
 
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index] {
-	width: 100% !important;
-	overflow-x: auto;
-	/*溢出滚动*/
-	/* padding-bottom: 50px; */
-}
 
-/* 设置首项底色为蓝色 */
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div {
-	background-color: #34455d;
-	color: white;
-	outline: none;
-	border-radius: 50px;
-	padding: 1px 8px;
-	min-width: 2.5em;
-	text-align: center;
-}
-
-/* 首项中修改块引用颜色 */
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div span[data-type='block-ref'] {
-	color: white;
-}
-
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div span[data-type='block-ref']::before,
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div span[data-type='block-ref']::after {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-/* 第二项颜色 */
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.list>div.li>div.p>div {
-	color: white;
-	background-color: #84a2ca;
-	outline: none;
-	border-radius: 50px;
-	padding: 1px 8px;
-	min-width: 2.5em;
-	text-align: center;
-}
 
 /*子项设偏移调整*/
 .protyle-wysiwyg *[custom-f="dt"] [data-node-id].li>[data-node-id] {
 	margin-left: 20px !important;
-	margin-right: -14px !important;
+	margin-right: -24px !important;
 }
 
 .protyle-wysiwyg *[custom-f="dt"] [data-node-id].li>.list {
@@ -79,30 +79,52 @@
 }
 
 /*取消标题层级提示*/
+.protyle-wysiwyg *[custom-f="dt"] .li div {
+	border-right: 10px solid transparent;
+}
 
 /*文字框*/
 .protyle-wysiwyg *[custom-f="dt"] .li div>div[spellcheck="false"] {
 	margin-left: -8px;
-	padding: 5px 10px;
+	padding: 1px 0px 1px 8px;
 	margin-top: 2px;
+	background-color: var(--b3-block-daotu);
+	border-radius: 50px;
 	color: gray;
 	background-color: #e3e9f0;
 	border-radius: 50px;
-	/* border: 2px solid #cfcece; */
-	/* outline: 1px solid #cfcece; */
-	white-space: nowrap;
-	padding: 1px 8px;
-	min-width: 2.5em;
 	text-align: center;
-	/* max-width: 15vw; */
+	white-space: nowrap;
 }
 
-.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>[data-node-id]>div[spellcheck="false"] {
-	padding: 5px 10px 5px 32px;
+/* .protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>[data-node-id]>div[spellcheck="false"] {
+	padding: 5px 0px 5px 35px;
 }
 
 .protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="o"]>[data-node-id]>div[spellcheck="false"] {
 	padding: 5px 10px 5px 25px;
+}
+
+.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>.code-block>.protyle-action {
+	padding: 5px 0px 5px 30px;
+}
+
+.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>[data-node-id]>div.hljs {
+	padding: 30px 0px 22px 30px;
+}
+
+.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="o"]>.code-block>.protyle-action {
+	padding: 5px 0px 5px 30px;
+}
+
+.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="o"]>[data-node-id]>div.hljs {
+	padding: 30px 0px 22px 30px;
+} */
+
+.protyle-wysiwyg *[custom-f="dt"] .li div>div.hljs {
+	padding: 30px 10px 22px;
+	margin-left: 2px;
+	background-color: var(--b3-menu-background);
 }
 
 /*去除竖线*/
@@ -110,25 +132,36 @@
 	display: none;
 }
 
-/*圆点符号居中对齐*/
-.list[custom-f="dt"][data-node-id] .protyle-action {
-	top: calc(50% + 1px);
-	left: 23px;
-	position: absolute;
-	transform: translate(0, -50%);
-	z-index: 2;
-	color: #8080804d;
-
-}
-
+/*无序列表*/
 .protyle-content *[custom-f~=dt] [data-subtype="u"][data-node-id].li>div.protyle-action {
 	top: 50%;
 	margin-left: -18px;
+	color: #8080804d;
 }
 
+/*有序列表*/
 .protyle-content *[custom-f~=dt] [data-subtype="o"][data-node-id].li>div.protyle-action {
-	top: 50%;
-	margin-left: -5px;
+	top: calc(50% + 1px);
+	margin-left: 17px;
+	color: #8080804d;
+	display: none;
+}
+
+/*圆点符号居中对齐*/
+.list[custom-f="dt"][data-node-id] .li>.protyle-action {
+	top: calc(50% + 1px);
+	left: 3px;
+	position: absolute;
+	transform: translate(0, -50%);
+	z-index: 2;
+}
+
+.protyle-wysiwyg *[custom-f="dt"] [data-subtype="u"][data-node-id].li>.protyle-action:after {
+	left: 37px;
+}
+
+.list[custom-f="dt"][data-node-id] .protyle-action svg {
+	left: 20px;
 }
 
 /*前继承线*/
@@ -159,8 +192,13 @@
 
 /*单个子项直线*/
 .protyle-wysiwyg *[custom-f="dt"] .list>.li:first-child:nth-last-child(2)::after {
+	width: 0px;
+}
+
+/*单个子项直线对齐修正*/
+.list[custom-f="dt"] .list:has(>.li:first-child:nth-last-child(2))::after {
 	border-radius: 0px;
-	width: 22px;
+	width: 39px;
 	margin-bottom: -2px;
 }
 
@@ -178,14 +216,12 @@
 /*上框线*/
 .protyle-wysiwyg *[custom-f="dt"] .li:first-child::before {
 	border-radius: 5px 0 0 0;
-	/* border-radius: 0; */
 }
 
 /*下框线*/
 .protyle-wysiwyg *[custom-f="dt"] .li:nth-last-child(2)::after {
 	border-bottom: 2px solid #e9e9e9 !important;
 	border-radius: 0 0 0 5px;
-	/* border-radius: 0; */
 }
 
 /*后继承线*/
@@ -200,8 +236,8 @@
 }
 
 /*取消根目录线*/
-div[data-node-index]>[data-type="NodeListItem"]::after,
-div[data-node-index]>[data-type="NodeListItem"]::before {
+div *[custom-f="dt"]>[data-type="NodeListItem"]::before,
+div *[custom-f="dt"]>[data-type="NodeListItem"]::after {
 	display: none;
 }
 

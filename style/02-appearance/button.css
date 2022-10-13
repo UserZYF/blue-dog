@@ -15,7 +15,7 @@
 .b3-button--outline:hover,
 .b3-button--outline:focus {
     transition: all 0.1s ease-in-out;
-    color: white;
+    color: var(--b3-white-black);
     background-color: var(--b3-theme-primary);
 }
 
@@ -40,15 +40,15 @@
     height: 18px;
     width: 36px;
     border-radius: 50px;
-    outline: 1px solid #bfbfbf;
-    background-color: #8080802b;
+    outline: 1px solid var(--b3-switch-border);
+    background-color: var(--b3-switch-background);
 }
 
 /* 02 按钮 */
 .b3-switch:after {
     top: 0px;
     left: 0px;
-    background-color: rgb(161, 161, 161);
+    background-color: var(--b3-switch-background-off);
     border: none;
 }
 
@@ -60,7 +60,7 @@
 } */
 /* 02 按钮 */
 .b3-switch:checked:after {
-    background-color: white;
+    background-color: var(--b3-theme-background);
 }
 
 /* ————————————————————取消鼠标悬浮时产生的大灰圆背景颜色———————————————————— */

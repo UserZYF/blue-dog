@@ -1,7 +1,7 @@
 /* -----------------------------------------超链接 a----------------------------------- */
 
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty) {
-    text-decoration: 0.05em solid #0066ff underline;
+    text-decoration: 0.05em solid var(--b3-protyle-inline-link-color) underline;
     text-underline-offset: 2px;
     color: var(--b3-theme-on-background);
 }
@@ -13,7 +13,7 @@
 
 /* 集市中说明文档链接样式 */
 .item__readme.b3-typography a {
-    border-bottom: 1px solid #0066ff;
+    border-bottom: 1px solid var(--b3-protyle-inline-link-color);
 }
 
 .item__readme.b3-typography a:hover {

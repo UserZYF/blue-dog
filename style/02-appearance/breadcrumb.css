@@ -1,12 +1,11 @@
 /* -------------------------------------------------面包屑导航样式-------------------------------------------- */
 .protyle-breadcrumb {
-    color: gray;
-    background-color: white;
+    background-color: var(--b3-breadcrumb-background);
     font-size: 14px !important;
     height: 26px;
     text-overflow: ellipsis;
-    border-top: 2px solid #e6e6e8;
-    border-bottom: 1px solid #e6e6e8;
+    border-top: 2px solid var(--b3-breadcrumb-border-color);
+    border-bottom: 1px solid var(--b3-breadcrumb-border-color);
 }
 
 .protyle-breadcrumb__bar {
@@ -19,14 +18,6 @@
     width: 14px;
 }
 
-.fn__flex-1.protyle {
-    background-color: white;
-}
-
-/* .protyle-content {
-    box-shadow: var(--b3-protyle-content-shadow);
-} */
-
 
 /* -------------------------------------------------面包屑导航样式 END-------------------------------------------- */
 
@@ -34,7 +25,7 @@
 .protyle-breadcrumb svg.popover__block,
 .protyle-breadcrumb .protyle-breadcrumb__arrow,
 .protyle-breadcrumb .protyle-breadcrumb__item {
-    color: #55555a4d;
+    color: var(--b3-breadcrumb-color);
 }
 
 /* 设置聚焦的块前面的符号颜色和文字颜色为主色 */
@@ -46,7 +37,6 @@ span.protyle-breadcrumb__item.protyle-breadcrumb__item--active svg.popover__bloc
 /* 鼠标在面包屑上悬浮时更改文字和文字前面icon的颜色 */
 .protyle-breadcrumb__item:hover {
     color: var(--b3-theme-on-background) !important;
-    /* background-color: rgba(154, 153, 155, .08) !important; */
 }
 
 .protyle-breadcrumb__item:hover svg.popover__block {

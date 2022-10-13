@@ -2,12 +2,12 @@
 .b3-menu,
 .b3-menu__submenu {
     border-radius: var(--b3-border-radius-noraml);
-    background-color: white !important;
+    background-color: var(--b3-theme-background) !important;
 }
 
 /* 设置menu中item背景颜色 */
 .b3-menu .b3-menu__item {
-    background-color: white;
+    background-color: var(--b3-theme-background);
 }
 
 /* 鼠标hover时背景颜色 */

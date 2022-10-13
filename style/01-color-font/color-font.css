@@ -19,6 +19,95 @@
     /* ————————————————————辅助色———————————————————— */
     --b3-theme-secondary: #ff9607;
 
+    /* ————————————————————dock界面———————————————————— */
+    --b3-toolbar-background: #f3f5f7;
+    --b3-dockleft-background:linear-gradient(to right, #75a7f1, #65a3ff);
+    --b3-dockright-background:white;
+    --b3-status-background:white;
+
+    --b3-item-svg:rgba(255, 255, 255, 0.5);
+    --b3-item-active-svg:white;
+
+    /* ————————————————————文档树界面———————————————————— */
+    --b3-block-logo-color: #80808080;
+    --b3-counter-color:#55555a5d;
+
+    /* ————————————————————标签页———————————————————— */
+    /* 标签页背景色 */
+    --b3-tab-bar-background:#f3f3f5;
+    /* 当前标签页背景色 */
+    --b3-tab-bar-focus-background:linear-gradient(to right, #75a7f1, #65a3ff);
+    /* 标签页鼠标悬浮时背景色 */
+    --b3-tab-bar-hover-background: #8080803c;
+    /* 当前标签页文字色 */
+    --b3-tab-bar-focus-color:white;
+    /* 标签页边框颜色 */
+    --b3-tab-bar-border-right-color:#e6e6e8;
+    /* 关闭按钮图标颜色 */
+    --b3-tab-bar-close-color: white ;
+    /* 关闭按钮背景颜色 */
+    --b3-tab-bar-close-background:rgba(255, 255, 255, 0.5);
+    
+    /* ————————————————————面包屑———————————————————— */
+    /* 面包屑文字颜色 */
+    --b3-breadcrumb-color:#55555a4d;
+    /* 面包屑背景颜色 */
+    --b3-breadcrumb-background:white;
+    /* 面包屑边框颜色 */
+    --b3-breadcrumb-border-color: #e6e6e8;
+    
+    /* ————————————————————鼠标mouse———————————————————— */
+    --b3-mouse-select-background:rgba(128, 128, 128, 0.08);
+
+    /* ————————————————————悬浮工具栏toolbar———————————————————— */
+    --b3-small-toolbar-background:white;
+    --b3-small-toolbar-shadow: rgb(0 0 0 / 20%) 0px 4px 20px 0px;
+
+    /* ————————————————————菜单menu———————————————————— */ 
+    --b3-menu-background:white;
+    --b3-white-black: white;
+    --b3-gray:gray;
+
+    /* ————————————————————分栏column———————————————————— */ 
+    --b3-80808080: #80808080;
+
+    /* ————————————————————on/off———————————————————— */ 
+    --b3-switch-background: #8080802b;
+    --b3-switch-background-off: #a1a1a1;
+    --b3-switch-border: #bfbfbf;
+
+    /* ————————————————————on/off———————————————————— */ 
+    --b3-block-ref-color:#175199;
+    --b3-block-ref-before: rgba(128,128,128,0.6);
+    --b3-block-ref-hover-background:#0066ff1a;
+
+    /* ————————————————————keyboard(kbd)———————————————————— */
+    --b3-kbd-color:gray;
+
+
+    /* ----------------------------------------------------------------块级元素---------------------------------------------------------- */
+    /* ————————————————————表格———————————————————— */
+    /* 表行 */
+    --b3-table-tr-background: transparent;
+    /* 表行悬浮 */
+    --b3-table-tr-hover-background: var(--b3-theme-hover2);
+    /* 表头 */
+    --b3-table-thead-background: #ebebeb;
+    /* 表格内部边框 */
+    --b3-table-border-color: #d3d3d3;
+    /* 奇数行背景色 */
+    --b3-table-odd-background: transparent;
+    /* 偶数行背景色 */
+    --b3-table-even-background: transparent;
+    /* ————————————————————引用———————————————————— */
+    /* 文字颜色 */
+    --b3-bq-color: rgba(0, 0, 0, .68);
+    /* 背景颜色 */
+    --b3-bq-background:#f8f8f8;
+    /* 左侧条背景色 */
+    --b3-border-left-background:#e6e6e6;
+
+
     /* ————————————————————背景色———————————————————— */
     /* 01 正文背景颜色 */
     --b3-theme-background: #fff;
@@ -27,7 +116,8 @@
     /* 03 侧边栏和顶栏背景颜色 */
     --b3-theme-background-light: #f3f5f7;
     /* 05 侧栏背景颜色 */
-    --b3-theme-surface: var(--b3-theme-background2);
+    /* !important */
+    --b3-theme-surface: #f3f3f5;
     /* 06 标签页背景颜色 */
     --b3-theme-tab: #e1e1e1;
     /* 07 错误颜色，保持默认 */
@@ -156,12 +246,12 @@
     --b3-font-color5: #17a2b8;
     --b3-font-color6: #007bff;
     --b3-font-color7: #6f42c1;
-    --b3-font-color8: #6c757d;
+    --b3-font-color8: #7a878b70;
     --b3-font-color9: #f4c2c7;
     --b3-font-color10: #ffecb4;
     --b3-font-color11: #b9e3ea;
     --b3-font-color12: #bee4c7;
-    --b3-font-color13: gray;
+    --b3-font-color13: #d5d5d6;
 
     /* 13种自定义背景颜色 */
     --b3-font-background1: #fbd2d4;
@@ -178,15 +268,11 @@
     --b3-font-background12: #28a745;
     --b3-font-background13: transparent;
 
-    --b3-h1-after: #fbd2d480;
-    --b3-h2-after: #fce1cd80;
-    --b3-h3-after: #fcf4cc80;
-    --b3-h4-after: #cce7e080;
-    --b3-h5-after: #cde3f480;
-    --b3-h6-after: #dbdcf480;
+
 
 
     /* PDF标注颜色 */
+    --b3-pdf-selection: #d0e9c8;
     --b3-pdf-sidebar-width: 200px;
     --b3-pdf-offset: 0;
     --b3-pdf-background1: #ffb3ac;
@@ -258,15 +344,17 @@
     /* 倾斜文字颜色 */
     --b3-protyle-inline-em-color: var(--b3-theme-on-background);
     /* 删除线文字颜色 */
-    --b3-protyle-inline-s-color: var(--b3-theme-on-background);
+    --b3-protyle-inline-s-color: #55555a3f;
     /* 超链接颜色和鼠标悬浮颜色，不用管 */
-    --b3-protyle-inline-link-color: transparent;
+    --b3-protyle-inline-link-color: #0066ff;
     --b3-protyle-inline-link-hover-color: red;
     /* 高亮颜色/标记颜色 */
     --b3-protyle-inline-mark-background: #fffcb4;
     --b3-protyle-inline-mark-color: black;
     /* 标签颜色 */
-    --b3-protyle-inline-tag-background: var(--b3-theme-hover2);
+    --b3-protyle-inline-tag-background: #b2d1ff6c;
+    /* blue-dog主题专属 */
+    --b3-protyle-inline-tag-before: #9bc1fa;
     --b3-protyle-inline-tag-color: var(--b3-theme-primary);
     /* 行内代码颜色 */
     --b3-protyle-inline-code-color: var(--b3-theme-primary);
@@ -275,12 +363,7 @@
     --b3-protyle-inline-blockref-color: #0e7a88;
     --b3-protyle-inline-blockref-hover-color: red;
 
-    /* 表格 */
-    --b3-table-border-color: rgb(211, 211, 211);
-    --b3-table-border-black-color: #686868;
-    --b3-table-th-color: transparent;
-    --b3-table-trn-color: transparent;
-    --b3-table-tr2n-color: transparent;
+
 
     /* 高亮 */
     --b3-menu-highlight-color: var(--b3-theme-primary);
@@ -313,6 +396,7 @@
     --b3-border-kbd: 0.1em solid rgba(128, 128, 128, 0.2);
     --b3-border-gezi: 0.05em solid #cfcece4d;
     --b3-link-underline-color: #d71a1aad;
+    --b3-dialog-button: #e6e6e6;
 }
 
 /* ----------------------------------------------------root定义结束---------------------------------------------------- */

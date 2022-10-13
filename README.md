@@ -4,13 +4,53 @@
 - 超级块之间的间隔拉大，更加美观
 - 自定义属性和 zhang-light 主题一致
 - 隐藏思源笔记的顶栏按钮，鼠标悬浮可以显示（代码来自于Roy制作的notion-theme主题）
+  - 不足之处是点击区域缩小了，需要在标签页中下部分点击才能奏效
+
 - 加入集市中"abbj"设计的搜索栏左右分栏的代码，搜索起来更方便
 - 网址链接前面加入网站图标，并且链接文字颜色与网站图标颜色一致
 - 配色非常的好看
 - 属于本主题的独特设计：
   - 给引用添加外观中的4种样式颜色，即可出现专属便利贴
 
+### 反馈渠道
+
+- GitHub主页
+- 邮箱：3466181911@qq.com
+
+### 功能展示
+
+#### 列表转导图
+
+- ![GIF 2022-10-13 20-54-20.gif](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73yjdwygug31hc0u0k26.gif)
+
+#### 列表转表格
+
+- ![GIF 2022-10-13 20-56-52.gif](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73yiokcrjg31hc0u0n85.gif)
+
+#### blue-dog主题便利贴
+
+- ![GIF 2022-10-13 21-00-56.gif](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73ynkjk0cg31hc0u0qim.gif)
+
 ### 更新进度
+
+#### 0.28版本
+
+- 修改3级标题样式，类似于百度百科标题样式
+  - ![image.png](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73xeupuczj31hc0smwoy.jpg)
+- 给折叠后的标题增加边框
+  - ![image.png](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73xgqgav8j31hc0smdmw.jpg)
+- 修改待办事项折叠后的颜色，变浅一点
+  - ![image.png](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73xkpgpezj31hc0sm7g5.jpg)
+- 修改批注样式，类似于自定义属性中便签的效果
+  - ![image.png](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73xldrbamj31hc0sm1c7.jpg)
+- 修改反链面板背景颜色，容易和正文区分
+  - ![image.png](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73xmvxutfj31hc0sm4it.jpg)
+- 设置块标悬浮背景颜色（来自Notion主题），折叠样式块标颜色（来自Concise Light主题）
+  - ![image.png](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73xrxw6mqj31hc0smk31.jpg)
+- 修复列表转导图时出现多余列表项的bug
+  - ![Snipaste_2022-10-13_01-02-18.png](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73xnr56qlj31hc0smtl0.jpg)
+- 去掉**列表转表格**和**列表转导图**的宽度限制，不局限在一个区域中，左右拖动可以查看（但是如果过宽，导出时可能显示不全）
+  - ![image.png](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73xufsg6vj31hc0sm7bg.jpg)
 
 #### 0.27
 
@@ -65,13 +105,14 @@
 
 ### 感谢列表
 
-| 主题           | 作者     | 功能                                  |
-| -------------- | -------- | ------------------------------------- |
-| notion-theme   | Roy      | 顶栏，js 功能，列表转表格，列表转导图 |
-| Tsundoku Light | Achuan-2 | 网址链接前面 icon                     |
-| Rem Craft      | 莽撞人   | 文档树辅助线                          |
-| naive          | 九炎     | 标签页新建按钮跟随最后一个标签页      |
-| -              | 阿白笔记 | Ctrl+P 左右分栏                       |
+| 主题           | 作者          | 功能                                  |
+| -------------- | ------------- | ------------------------------------- |
+| notion-theme   | Roy           | 顶栏，js 功能，列表转表格，列表转导图 |
+| Tsundoku Light | Achuan-2      | 网址链接前面 icon                     |
+| Rem Craft      | 莽撞人        | 文档树辅助线                          |
+| naive          | 九炎          | 标签页新建按钮跟随最后一个标签页      |
+| Dark+          | Zuoqiu-yingyi | 列表转导图，引入字体，CSS分组         |
+| -              | 阿白笔记      | Ctrl+P 左右分栏                       |
 
 ### 字体版权
 

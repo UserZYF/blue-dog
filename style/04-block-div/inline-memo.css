@@ -1,0 +1,29 @@
+.b3-typography span[data-type~=inline-memo],
+.protyle-wysiwyg span[data-type~=inline-memo] {
+    background-color: #fff00030;
+    border-bottom: 2px solid #fff000;
+}
+
+
+.b3-typography span[data-type~=inline-memo]::after,
+.protyle-wysiwyg span[data-type~=inline-memo]::after {
+    content: url(../../src/pizhu.svg);
+    opacity: 0.7;
+}
+
+.tooltip--memo {
+    width: 300px;
+    min-height: fit-content;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    color: gray;
+    background-color: #fffccf;
+    box-shadow:
+        rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px,
+        rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 20px 10px;
+    border-top: 4px solid #fff000;
+    border-radius: 7px;
+}

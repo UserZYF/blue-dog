@@ -4,9 +4,9 @@
 .protyle-wysiwyg kbd,
 .protyle-wysiwyg span[data-type~=kbd] {
     border: var(--b3-border-kbd);
-    border-bottom: 0.1em solid gray;
+    border-bottom: 0.1em solid var(--b3-kbd-color);
     border-radius: 4px;
-    color: gray;
+    color: var(--b3-kbd-color);
     background-color: var(--b3-theme-background2);
     vertical-align: 0.25em;
     font-family: var(--b3-font-family-code);

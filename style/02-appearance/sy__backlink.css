@@ -1,0 +1,15 @@
+.sy__backlink .protyle,
+.backlinkList {
+    background-color: #f8fdff;
+}
+
+
+.sy__backlink .b3-list-item:not(.b3-list-item:nth-child(1)) {
+    border-top: 0.05em solid #8080802d;
+}
+
+
+input.b3-text-field.b3-text-field--small.b3-form__icon-input {
+    box-shadow: none;
+    padding: 1px 8px;
+}

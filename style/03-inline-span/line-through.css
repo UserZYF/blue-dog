@@ -4,6 +4,6 @@
 .protyle-wysiwyg s,
 .protyle-wysiwyg span[data-type~=s] {
     text-decoration: line-through;
-    text-decoration-color: #55555a3f;
-    color: #55555a44;
+    text-decoration-color: var(--b3-protyle-inline-s-color);
+    color: var(--b3-protyle-inline-s-color);
 }

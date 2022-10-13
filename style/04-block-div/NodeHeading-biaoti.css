@@ -94,21 +94,16 @@
 /* --------------------------------------------------标题样式END------------------------------------------------------ */
 
 /* ————————————————————折叠后去掉标题左边圆形———————————————————— */
-/* .protyle-wysiwyg div[fold="1"][data-type="NodeHeading"]:before {
-    position: absolute;
-    top: 0.7em;
-    left: -1em;
-    background-color: transparent;
-    color: var(--b3-font-color-gray-tm);
-    font-size: 20px;
-    font-family: var(--b3-font-family-code);
-} */
-
-/* ————————————————————给折叠标题增加背景样式———————————————————— */
-.protyle-wysiwyg div[fold="1"][data-type="NodeHeading"] {
-    color: var(--b3-font-color-gray-tm) !important;
+.protyle-wysiwyg div[fold="1"][data-type="NodeHeading"]:before {
+    display: none;
 }
 
+/* ————————————————————给折叠标题增加边框样式———————————————————— */
+.protyle-wysiwyg div[fold="1"][data-type="NodeHeading"] {
+    border: 2px solid var(--b3-border-color);
+}
+
+/* 折叠标题单行显示，且加上省略号 */
 .protyle-wysiwyg div[fold="1"][data-type="NodeHeading"] div {
     overflow: hidden !important;
     text-overflow: ellipsis !important;

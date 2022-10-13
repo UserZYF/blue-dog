@@ -1,0 +1,6 @@
+@media print {
+    .protyle-wysiwyg .list[custom-f="dt"] {
+        width: 100% !important;
+        overflow-x: hidden;
+    }
+}

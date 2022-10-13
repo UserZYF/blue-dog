@@ -5,32 +5,30 @@
 
 /* ------------------------------------------设置弹窗样式------------------------------------------ */
 .b3-dialog__container {
-    background-color: white;
+    background-color: var(--b3-theme-background);
     border-radius: 1px;
 }
 
 /* 设置关闭按钮样式 */
 .b3-dialog__container button.b3-button.b3-button--cancel {
-    background-color: white;
-    outline: 1px solid #e6e6e6;
-    /* border-radius: 1px; */
+    background-color: var(--b3-theme-background);
+    outline: 1px solid var(--b3-dialog-button);
     color: var(--b3-theme-on-background);
 }
 
 .b3-dialog__container button.b3-button.b3-button--cancel:hover {
-    background-color: #8080803c;
+    background-color: var(--b3-tab-bar-hover-background);
 }
 
 /* 设置确认按钮样式 */
 .b3-dialog__container button#confirmDialogConfirmBtn {
-    background-image: linear-gradient(to right, #75a7f1, #65a3ff);
-    color: white;
-    /* border-radius: 1px; */
+    background-image: var(--b3-tab-bar-focus-background);
+    color: var(--b3-white-black);
 }
 
 /* ------------------------------------------设置弹窗样式 END------------------------------------------ */
 
 /* 修改更多字体面板背景样式 */
 .protyle-util {
-    background-color: white;
+    background-color: var(--b3-theme-background);
 }

@@ -1,6 +1,6 @@
 /* 修改 文档树 大纲 收集箱 文字的颜色 */
 .block__logo {
-    color: #80808080;
+    color: var(--b3-block-logo-color);
 }
 
 /* 取消文档树、大纲、反向链接左边的icon，感觉显示重复了 */
@@ -10,14 +10,14 @@
 
 /* 文档树、大纲、反向链接顶部的背景颜色 */
 .block__icons {
-    background-color: #f3f3f5;
+    background-color: var(--b3-theme-surface);
     border-bottom: 2px dashed var(--b3-border-color);
     padding-top: 9px;
 }
 
 /* 文档树引用数字的颜色 */
 .counter {
-    color: #55555a5d;
+    color: var(--b3-counter-color);
 }
 
 .counter:hover {
@@ -106,7 +106,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
     background-color: var(--b3-theme-tm-gray) !important;
 }
 
-/* 文档树辅助线（来自于Rem Craft主题） */
+/* --------------------------------文档树辅助线（来自于Rem Craft主题）--------------------------------------- */
 .b3-list:not(.b3-list--border) .b3-list-item+ul {
     box-shadow: 13px 0 rgba(255, 255, 255, 1) inset, 14px 0 rgba(231, 231, 231, 1) inset
 }
