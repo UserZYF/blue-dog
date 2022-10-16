@@ -101,6 +101,7 @@
 /* ————————————————————给折叠标题增加边框样式———————————————————— */
 .protyle-wysiwyg div[fold="1"][data-type="NodeHeading"] {
     border: 2px solid var(--b3-border-color);
+    border-radius: 4px;
 }
 
 /* 折叠标题单行显示，且加上省略号 */

@@ -12,7 +12,6 @@
 .block__icons {
     background-color: var(--b3-theme-surface);
     border-bottom: 2px dashed var(--b3-border-color);
-    padding-top: 9px;
 }
 
 /* 文档树引用数字的颜色 */
@@ -72,6 +71,15 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 
+/* 文档树item */
+/* 抵消v2.4.1α的影响 */
+.b3-list-item {
+    margin: 0px !important;
+}
+
+.b3-list--background .b3-list-item {
+    border-radius: 0px;
+}
 
 /* ------------------------------------文档树文字设置为灰色------------------------------- */
 .b3-list-item__text {
@@ -106,13 +114,14 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
     background-color: var(--b3-theme-tm-gray) !important;
 }
 
+
 /* --------------------------------文档树辅助线（来自于Rem Craft主题）--------------------------------------- */
 .b3-list:not(.b3-list--border) .b3-list-item+ul {
     box-shadow: 13px 0 rgba(255, 255, 255, 1) inset, 14px 0 rgba(231, 231, 231, 1) inset
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item {
-    margin-left: 6px
+    margin-left: 6px !important
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul {
@@ -120,7 +129,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 12px
+    margin-left: 12px !important
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
@@ -128,7 +137,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 18px
+    margin-left: 18px !important
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
@@ -136,7 +145,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 24px
+    margin-left: 24px !important
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
@@ -144,7 +153,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 30px
+    margin-left: 30px !important
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
@@ -152,7 +161,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 36px
+    margin-left: 36px !important
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
@@ -160,5 +169,5 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 .b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 42px
+    margin-left: 42px !important
 }

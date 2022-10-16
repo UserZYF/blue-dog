@@ -14,7 +14,7 @@
 
 ### 反馈渠道
 
-- GitHub主页
+- [GitHub主页](https://github.com/UserZYF/blue-dog/issues)
 - 邮箱：3466181911@qq.com
 
 ### 功能展示
@@ -32,6 +32,14 @@
 - ![GIF 2022-10-13 21-00-56.gif](https://tva1.sinaimg.cn/large/006Cw1j8ly1h73ynkjk0cg31hc0u0qim.gif)
 
 ### 更新进度
+
+#### 0.29版本
+
+- 适配思源笔记v2.4.1版本的更新（侧栏变宽，状态栏变高）
+- 修改反向链接面板的样式
+  - ![image.png](https://tva1.sinaimg.cn/large/006Cw1j8ly1h77l0i4dtjj31hc0smakh.jpg)
+- 将底部状态栏样式恢复为默认样式
+- 加强嵌入块中分割线的样式，更加显眼
 
 #### 0.28版本
 

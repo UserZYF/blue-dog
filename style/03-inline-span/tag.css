@@ -10,7 +10,7 @@
     border-bottom: none;
 }
 
-span[data-type='tag']::before {
+.protyle-wysiwyg span[data-type='tag']::before {
     content: "#";
     color: var(--b3-white-black);
     display: inline-block;

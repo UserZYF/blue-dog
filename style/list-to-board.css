@@ -1,8 +1,8 @@
 /*————————————————————列表转看板————————————————————*/
 
-.protyle-wysiwyg *[custom-f="kb"] {
+/* .protyle-wysiwyg *[custom-f="kb"] {
     outline: 2px dashed #e9e9e9;
-}
+} */
 
 .protyle-wysiwyg .list[custom-f~=kb][data-node-id][data-type="NodeList"] {
     display: flex;

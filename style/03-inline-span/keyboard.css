@@ -8,6 +8,6 @@
     border-radius: 4px;
     color: var(--b3-kbd-color);
     background-color: var(--b3-theme-background2);
-    vertical-align: 0.25em;
+    vertical-align: 2px;
     font-family: var(--b3-font-family-code);
 }

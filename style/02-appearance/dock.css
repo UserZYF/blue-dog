@@ -1,3 +1,4 @@
+/* ----------------------------------------------01 顶栏---------------------------------------------- */
 .toolbar {
     background-color: var(--b3-toolbar-background);
     margin-bottom: -22px;
@@ -5,6 +6,16 @@
     opacity: 0;
     transition: opacity 300ms;
     transition-delay: 500ms;
+    height: 22px;
+}
+
+.toolbar__item {
+    padding: 2px 12px;
+}
+
+.toolbar__item svg {
+    height: 15px;
+    width: 15px;
 }
 
 .toolbar:hover {
@@ -12,7 +23,9 @@
     transition: all 300ms;
 }
 
-/* 给左侧dock栏设置右边框 */
+
+/* ----------------------------------------------02 左侧栏---------------------------------------------- */
+/* 设置左栏蓝色渐变背景，下移item，防止和顶栏冲突 */
 div#dockLeft {
     background-image: var(--b3-dockleft-background);
     padding-top: 10px;
@@ -20,22 +33,20 @@ div#dockLeft {
     height: calc(100% - 15px);
 }
 
-
-
 div#dockLeft svg {
-    color: var(--b3-item-svg);
+    color: #ffffff80;
 }
 
 div#dockLeft .dock__item--active svg {
-    color: var(--b3-item-active-svg) !important;
+    color: white;
 }
 
-div#dockLeft .dock__item:hover {
-    background-color: transparent;
+div#dockLeft .dock__item:hover,
+div#dockLeft .dock__item--active {
+    background-color: rgba(0, 102, 255, 0.5);
 }
 
-
-/* 给右侧dock栏设置左边框 */
+/* ----------------------------------------------03 右侧栏---------------------------------------------- */
 div#dockRight {
     background-color: var(--b3-dockright-background);
     padding-top: 10px;
@@ -43,20 +54,11 @@ div#dockRight {
     height: calc(100% - 15px);
 }
 
-
-.status {
+/* ----------------------------------------------04 底部状态栏---------------------------------------------- */
+/* .status {
     background-color: var(--b3-status-background) !important;
     position: absolute;
     bottom: 0px;
     right: 30px;
     border-top-left-radius: 5px;
-}
-
-.status #barDock>.b3-menu {
-    left: unset !important;
-    right: 5em;
-}
-
-.status__msg {
-    display: none;
 }

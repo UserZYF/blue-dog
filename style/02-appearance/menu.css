@@ -8,6 +8,7 @@
 /* 设置menu中item背景颜色 */
 .b3-menu .b3-menu__item {
     background-color: var(--b3-theme-background);
+    border-radius: 3px;
 }
 
 /* 鼠标hover时背景颜色 */

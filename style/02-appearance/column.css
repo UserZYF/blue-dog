@@ -4,51 +4,39 @@
 .hint--menu {
     column-count: 4;
     column-width: 148px !important;
-    column-gap: 5px;
+    column-gap: 5px !important;
     min-width: 50vw !important;
     max-height: 480px !important;
     border: var(--b3-border-column);
     padding: 4px;
-    /* background-color: white; */
 }
 
-/* 取消显示分割线 */
+/* 修改分割线颜色 */
 .hint--menu .b3-menu__separator {
-    display: none;
+    background-color: var(--b3-theme-primary);
 }
 
 /* ————————————————————02 [[选择———————————————————— */
-.b3-menu.b3-list.b3-list--background {
-    padding: 4px;
-    /* background-color: white; */
-}
-
-/* 设置输入框的圆角大小 */
-.b3-menu input.b3-text-field {
-    border-radius: 1px;
-}
-
 /* 设置文档路径的文字颜色 */
-.b3-menu:not(.hint--menu).b3-list.b3-list--background .b3-list-item__meta {
+.b3-list-item__meta {
     color: var(--b3-80808080);
-    padding-bottom: 2px;
 }
 
 /* ————————————————————03 设置单个项目（两个选择器共用）———————————————————— */
-.b3-menu .b3-list-item {
+.b3-list-item--two {
     font-size: 90%;
-    border: var(--b3-border-column-item);
+    border: var(--b3-border-column-item) !important;
     box-sizing: border-box;
     vertical-align: middle;
     padding: 2px 8px !important;
-    margin-bottom: 0.1em;
+    margin-bottom: 0.1em !important;
+    width: 100% !important;
 }
 
-
-.b3-list.b3-list--background.b3-menu.hint--menu>.emojis {
+.hint--menu>.emojis {
     /* 表情菜单 */
     /* REF https: //github.com/siyuan-note/siyuan/issues/4575#issuecomment-1152490468 */
-    column-span: all;
+    column-span: all !important;
 }
 
 /* ----------------------------------------------------分栏代码 End-------------------------------------------------- */
