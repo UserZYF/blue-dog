@@ -26,4 +26,6 @@
     padding: 20px 10px;
     border-top: 4px solid #fff000;
     border-radius: 7px;
+    /* 调整层级，防止遮挡 */
+    z-index: 10;
 }

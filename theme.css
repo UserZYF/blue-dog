@@ -89,7 +89,7 @@
 @import url("style/04-block-div/NodeHeading-biaoti.css");
 /* 引入4种样式 */
 @import url("style/04-block-div/card.css");
-/* 修改批注样式 */
+/* 修改批注/备注样式 */
 @import url("style/04-block-div/inline-memo.css");
 
 /* ————————————————————自定义属性———————————————————— */
@@ -191,3 +191,15 @@
     background-color: var(--b3-theme-primary-lighter);
     margin-left: 10px;
 } */
+
+
+
+.fn__flex-column {
+    overflow: hidden;
+}
+
+
+.b3-typography>.p,
+.protyle-wysiwyg>.p {
+    text-align: justify;
+}

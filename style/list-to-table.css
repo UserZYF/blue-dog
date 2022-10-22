@@ -3,7 +3,9 @@
 .list[data-node-id][data-type="NodeList"][custom-f="bg"] {
     display: table;
     padding: 4px;
+    width: 100%;
 }
+
 
 /* ————————————————————所有子项目的表格（除去第一列其余的列），包含溢出的空白部分，所以才会有边框—————————————————————— */
 .protyle-wysiwyg *[custom-f="bg"] .li .list {

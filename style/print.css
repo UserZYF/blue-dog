@@ -3,4 +3,9 @@
         width: 100% !important;
         overflow-x: hidden;
     }
+
+    table {
+        display: table;
+        width: 100% !important;
+    }
 }

@@ -22,3 +22,10 @@
 }
 
 /* ------------------------------------------------块引用 END------------------------------------------------- */
+
+
+/* 虚拟引用 */
+.protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref] {
+    background-color: #80808011;
+    border-bottom: 2px dashed #8080803c;
+}

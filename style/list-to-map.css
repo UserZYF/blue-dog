@@ -12,14 +12,15 @@
 	background-color: #34455d;
 	color: white;
 	outline: none;
-	border-radius: 50px;
+	border-radius: 4px;
 	padding: 1px 0px 1px 8px;
 	min-width: 3em;
 	text-align: center;
 }
 
 /* 首项中修改块引用颜色 */
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='block-ref'] {
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='block-ref'],
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='file-annotation-ref'] {
 	color: white;
 }
 
@@ -33,7 +34,7 @@
 	color: white;
 	background-color: #84a2ca;
 	outline: none;
-	border-radius: 50px;
+	border-radius: 4px;
 	padding: 1px 0px 1px 8px;
 	min-width: 2.5em;
 	text-align: center;
@@ -89,12 +90,13 @@
 	padding: 1px 0px 1px 8px;
 	margin-top: 2px;
 	background-color: var(--b3-block-daotu);
-	border-radius: 50px;
+	border-radius: 4px;
 	color: gray;
 	background-color: #e3e9f0;
-	border-radius: 50px;
-	text-align: center;
-	white-space: nowrap;
+	/* 设置最大宽度 */
+	/* text-align: center; */
+	/* white-space: nowrap; */
+	max-width: 30em;
 }
 
 /* .protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>[data-node-id]>div[spellcheck="false"] {

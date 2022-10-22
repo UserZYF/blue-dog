@@ -92,10 +92,6 @@
     --b3-table-thead-background: #ebebeb;
     /* 表格内部边框 */
     --b3-table-border-color: #d3d3d3;
-    /* 奇数行背景色 */
-    --b3-table-odd-background: transparent;
-    /* 偶数行背景色 */
-    --b3-table-even-background: transparent;
     /* ————————————————————引用———————————————————— */
     /* 文字颜色 */
     --b3-bq-color: rgba(0, 0, 0, .68);

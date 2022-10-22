@@ -1,6 +1,6 @@
 /* ----------------------------------------------01 顶栏---------------------------------------------- */
 .toolbar {
-    background-color: var(--b3-toolbar-background);
+    background-color: #f3f5f7 !important;
     margin-bottom: -22px;
     z-index: 99;
     opacity: 0;
@@ -9,7 +9,7 @@
     height: 22px;
 }
 
-.toolbar__item {
+.toolbar__item:not(.status .toolbar__item) {
     padding: 2px 12px;
 }
 
@@ -56,9 +56,6 @@ div#dockRight {
 
 /* ----------------------------------------------04 底部状态栏---------------------------------------------- */
 /* .status {
-    background-color: var(--b3-status-background) !important;
-    position: absolute;
-    bottom: 0px;
-    right: 30px;
-    border-top-left-radius: 5px;
-}
+    height: 26px;
+    line-height: 26px;
+} */

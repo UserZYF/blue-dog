@@ -1,17 +1,15 @@
 /* -------------------------------表格start------------------------------------- */
 /* 表格100%宽度 */
-.protyle-wysiwyg table,
+/* .protyle-wysiwyg table,
 .b3-typography table {
     display: table;
     width: 100%;
-}
-
-
-/* .protyle-wysiwyg table,
-.b3-typography table {
-    overflow-x: visible;
-    width: 80vw;
 } */
+
+
+.table {
+    width: fit-content;
+}
 
 /* 表格表行 */
 .b3-typography table tr,
@@ -39,22 +37,5 @@ th, td {
     color: inherit;
 }
 
-/* 奇数行 */
-tbody tr:nth-child(2n + 1) {
-    background-color: var(--b3-table-odd-background) !important;
-}
-
-/* 偶数行 */
-tbody tr:nth-child(2n) {
-    background-color: var(--b3-table-even-background) !important;
-}
-
-
-
-/* 设置表格行悬浮高亮 */
-/* table tr:hover {
-    background: var(--b3-theme-hover2) !important;
-    color: var(--b3-theme-primary);
-} */
 
 /* -------------------------------表格end------------------------------------- */

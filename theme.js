@@ -212,3 +212,224 @@ function ViewMonitor(event) {
 }
 
 setTimeout(() => ClickMonitor(), 1000)
+
+
+
+
+
+
+
+
+
+setTimeout(function () {
+  // 反链全部展开图标
+  var barSearch = document.querySelector(".sy__backlink span[data-type=collapse]")
+  barSearch.insertAdjacentHTML(
+    "beforebegin",
+    `<span id="backlink_allexpand" data-type="collapse_expand" style="width:22px;height:22px;padding-right:2px;" class="block__icon b3-tooltips b3-tooltips__sw" aria-label="反链一键展开"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="1280.000000pt" height="1194.000000pt" viewBox="0 0 1280.000000 1194.000000"
+    preserveAspectRatio="xMidYMid meet">
+   <metadata>
+   Created by potrace 1.15, written by Peter Selinger 2001-2017
+   </metadata>
+   <g transform="translate(0.000000,1194.000000) scale(0.100000,-0.100000)"
+   fill="#00000" stroke="none">
+   <path d="M3075 11863 c-622 -387 -1140 -833 -1582 -1363 -925 -1106 -1440
+   -2454 -1489 -3900 l-7 -200 2241 0 2242 0 0 45 c0 234 89 587 206 815 160 313
+   417 597 695 766 l60 36 -33 58 c-196 345 -2204 3819 -2208 3819 -3 -1 -59 -34
+   -125 -76z"/>
+   <path d="M9534 11832 c-33 -59 -533 -927 -1112 -1929 -579 -1003 -1053 -1827
+   -1054 -1832 -2 -5 43 -40 99 -77 378 -255 652 -631 778 -1069 34 -118 62 -286
+   71 -419 l7 -106 2240 0 2240 0 -7 200 c-68 1986 -1022 3787 -2631 4969 -147
+   108 -552 373 -568 371 -1 0 -29 -49 -63 -108z"/>
+   <path d="M6210 7666 c-470 -85 -824 -366 -995 -790 -159 -397 -112 -829 130
+   -1197 63 -95 239 -271 335 -334 224 -148 452 -218 715 -218 165 -1 230 9 380
+   54 207 64 367 161 526 319 144 143 236 288 304 478 237 664 -121 1403 -790
+   1630 -49 17 -124 38 -165 47 -102 22 -344 28 -440 11z"/>
+   <path d="M5436 4731 c-11 -20 -1530 -2652 -1843 -3194 -206 -356 -376 -654
+   -379 -661 -7 -17 76 -67 311 -186 731 -370 1474 -583 2326 -667 249 -24 844
+   -24 1098 1 845 81 1594 296 2326 666 235 119 318 169 311 186 -4 11 -1949
+   3386 -2168 3762 l-60 103 -53 -30 c-82 -47 -251 -116 -363 -149 -175 -53 -334
+   -75 -532 -76 -320 -1 -588 60 -864 199 -58 29 -108 50 -110 46z"/>
+   </g>
+   </svg></span>`
+  );
+  let backLinkAllExpand = document.getElementById("backlink_allexpand");
+
+  backLinkAllExpand.addEventListener(
+    "click",
+    function (e) {
+      var list = document.querySelector(
+        "div.backlinkList.fn__flex-1 > ul"
+      ).children;
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].nextSibling && (list[i].nextSibling.tagName == "LI" || list[i].nextSibling.className.indexOf("fn__none")) > -1) {
+          list[i].click();
+        }
+        if (i == list.length - 1) {
+          list[i].click();
+        }
+      }
+    },
+    false
+  );
+  backLinkAllExpand.addEventListener(
+    "click",
+    function (e) {
+      e.stopPropagation();
+    },
+    false
+  );
+
+  // 提及全部展开图标
+  var barSearch = document.querySelector(".sy__backlink span[data-type=mCollapse]")
+  barSearch.insertAdjacentHTML(
+    "beforebegin",
+    `<span id="m_backlink_allexpand" data-type="collapse_expand" style="width:22px;height:22px;padding-right:2px;" class="block__icon b3-tooltips b3-tooltips__sw" aria-label="提及一键展开"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="1280.000000pt" height="1194.000000pt" viewBox="0 0 1280.000000 1194.000000"
+    preserveAspectRatio="xMidYMid meet">
+   <metadata>
+   Created by potrace 1.15, written by Peter Selinger 2001-2017
+   </metadata>
+   <g transform="translate(0.000000,1194.000000) scale(0.100000,-0.100000)"
+   fill="#00000" stroke="none">
+   <path d="M3075 11863 c-622 -387 -1140 -833 -1582 -1363 -925 -1106 -1440
+   -2454 -1489 -3900 l-7 -200 2241 0 2242 0 0 45 c0 234 89 587 206 815 160 313
+   417 597 695 766 l60 36 -33 58 c-196 345 -2204 3819 -2208 3819 -3 -1 -59 -34
+   -125 -76z"/>
+   <path d="M9534 11832 c-33 -59 -533 -927 -1112 -1929 -579 -1003 -1053 -1827
+   -1054 -1832 -2 -5 43 -40 99 -77 378 -255 652 -631 778 -1069 34 -118 62 -286
+   71 -419 l7 -106 2240 0 2240 0 -7 200 c-68 1986 -1022 3787 -2631 4969 -147
+   108 -552 373 -568 371 -1 0 -29 -49 -63 -108z"/>
+   <path d="M6210 7666 c-470 -85 -824 -366 -995 -790 -159 -397 -112 -829 130
+   -1197 63 -95 239 -271 335 -334 224 -148 452 -218 715 -218 165 -1 230 9 380
+   54 207 64 367 161 526 319 144 143 236 288 304 478 237 664 -121 1403 -790
+   1630 -49 17 -124 38 -165 47 -102 22 -344 28 -440 11z"/>
+   <path d="M5436 4731 c-11 -20 -1530 -2652 -1843 -3194 -206 -356 -376 -654
+   -379 -661 -7 -17 76 -67 311 -186 731 -370 1474 -583 2326 -667 249 -24 844
+   -24 1098 1 845 81 1594 296 2326 666 235 119 318 169 311 186 -4 11 -1949
+   3386 -2168 3762 l-60 103 -53 -30 c-82 -47 -251 -116 -363 -149 -175 -53 -334
+   -75 -532 -76 -320 -1 -588 60 -864 199 -58 29 -108 50 -110 46z"/>
+   </g>
+   </svg></span>`
+  );
+  let mBackLinkAllExpand = document.getElementById("m_backlink_allexpand");
+
+  mBackLinkAllExpand.addEventListener(
+    "click",
+    function (e) {
+      var list = document.querySelector(
+        "div.backlinkMList.fn__flex-1 > ul"
+      ).children;
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].nextSibling && (list[i].nextSibling.tagName == "LI" || list[i].nextSibling.className.indexOf("fn__none")) > -1) {
+          list[i].click();
+        }
+        if (i == list.length - 1) {
+          list[i].click();
+        }
+      }
+    },
+    false
+  );
+  mBackLinkAllExpand.addEventListener(
+    "click",
+    function (e) {
+      e.stopPropagation();
+    },
+    false
+  );
+}, 500);
+
+
+
+const config = {
+  theme: {
+    regs: {
+      // 正则表达式
+      fontsize: /(?<=\.b3-typography|protyle-wysiwyg|protyle-title\s*\{\s*font-size\s*:\s*)(\d+)(?=px(?:\s+\!important)?(?:\s*;|\}))/,
+    },
+    wheel: {
+      enable: true, // 滚轮功能开关
+      zoom: {
+        enable: true, // 滚轮缩放功能开关
+        threshold: 100, // 滚轮缩放阈值
+        min: 9, // 最小字号(px)
+        max: 72, // 最大字号(px)
+      },
+    },
+    hotkeys: {
+      wheel: {
+        zoom: {
+          // 鼠标滚轮缩放(Ctrl + wheel)
+          enable: true,
+          CtrlCmd: true,
+          WinCtrl: false,
+          Shift: false,
+          Alt: false,
+          type: 'mousewheel',
+        },
+      },
+    },
+  },
+};
+
+/**
+* 设置编辑器字号
+* REF https://github.com/siyuan-note/siyuan/blob/7fbae2f7438a313837218e419468e0b189163c6a/app/src/util/assets.ts#L120-L145
+* @param {number} fontSize 字号
+* @return {number} 设置后的字号
+* @return {null} 没有找到字号
+*/
+function setFontSize(fontSize) {
+  let style = document.getElementById('editorFontSize');
+  if (style) {
+    const height = Math.floor(fontSize * 1.625);
+    style.innerHTML = `
+.b3-typography, .protyle-wysiwyg, .protyle-title {font-size:${fontSize}px !important}
+.b3-typography code:not(.hljs), .protyle-wysiwyg span[data-type~=code] { font-variant-ligatures: ${window.siyuan.config.editor.codeLigatures ? "normal" : "none"} }
+.li > .protyle-action {height:${height + 8}px;line-height: ${height + 8}px}
+.protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h1, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h2, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h3, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h4, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h5, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h6 {line-height:${height + 8}px;}
+.protyle-wysiwyg [data-node-id].li > .protyle-action:after {height: ${fontSize}px;width: ${fontSize}px;margin:-${fontSize / 2}px 0 0 -${fontSize / 2}px}
+.protyle-wysiwyg [data-node-id].li > .protyle-action svg {height: ${Math.max(14, fontSize - 8)}px}
+.protyle-wysiwyg [data-node-id] [spellcheck="false"] {min-height:${height}px}
+.protyle-wysiwyg .li {min-height:${height + 8}px}
+.protyle-gutters button svg {height:${height}px}
+.protyle-wysiwyg img.emoji, .b3-typography img.emoji {width:${height - 8}px}
+.protyle-wysiwyg .h1 img.emoji, .b3-typography h1 img.emoji {width:${Math.floor(fontSize * 1.75 * 1.25)}px}
+.protyle-wysiwyg .h2 img.emoji, .b3-typography h2 img.emoji {width:${Math.floor(fontSize * 1.55 * 1.25)}px}
+.protyle-wysiwyg .h3 img.emoji, .b3-typography h3 img.emoji {width:${Math.floor(fontSize * 1.38 * 1.25)}px}
+.protyle-wysiwyg .h4 img.emoji, .b3-typography h4 img.emoji {width:${Math.floor(fontSize * 1.25 * 1.25)}px}
+.protyle-wysiwyg .h5 img.emoji, .b3-typography h5 img.emoji {width:${Math.floor(fontSize * 1.13 * 1.25)}px}
+.protyle-wysiwyg .h6 img.emoji, .b3-typography h6 img.emoji {width:${Math.floor(fontSize * 1.25)}px}
+.b3-typography:not(.b3-typography--default), .protyle-wysiwyg,.protyle,.p, .protyle-title, .protyle-title__input{font-family: "${window.siyuan.config.editor.fontFamily}",  "D-DIN","MiSans","quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols" !important;}
+`;
+    return parseInt(config.theme.regs.fontsize.exec(style.innerHTML));
+  }
+  return null;
+}
+
+/* 字号更改 */
+function changeFontSize(delta) {
+  let size = delta / config.theme.wheel.zoom.threshold | 0;
+  let old_size = window.siyuan.config.editor.fontSize;
+  let new_size = Math.max(Math.min(old_size + size, config.theme.wheel.zoom.max), config.theme.wheel.zoom.min);
+  new_size = setFontSize(new_size);
+  if (new_size) window.siyuan.config.editor.fontSize = new_size;
+}
+
+function isEvent(event, key) {
+  return (event.type === key.type
+    && event.altKey === key.Alt
+    && event.shiftKey === key.Shift
+    && (event.ctrlKey || event.metaKey) === key.CtrlCmd
+    && (event.ctrlKey && event.metaKey) === key.WinCtrl
+  )
+}
+
+document.addEventListener('mousewheel', e => {
+  if (isEvent(e, config.theme.hotkeys.wheel.zoom)) {
+    e.stopPropagation();
+    setTimeout(() => changeFontSize(e.wheelDeltaY), 0);
+  }
+}, true);
