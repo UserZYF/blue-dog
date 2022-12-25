@@ -11,7 +11,7 @@
 
 /* 设置待办事项样式 */
 
-.li.protyle-task--done .p {
+.protyle-task--done>.p {
     text-decoration: line-through;
     text-decoration-color: #55555a3f;
     color: #55555a44;

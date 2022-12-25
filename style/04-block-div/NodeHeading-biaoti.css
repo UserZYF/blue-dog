@@ -16,7 +16,9 @@
 
 /* 设置文档标题左侧icon的位置 */
 .protyle-title__icon {
-    top: 1.3em;
+    position: absolute;
+    top: 1.2em;
+    left: -1.5em;
 }
 
 

@@ -1,7 +1,7 @@
 /* ————————————————————设置界面颜色———————————————————— */
 /* 设置界面左栏背景颜色 */
 .b3-dialog--open .b3-dialog__container ul.b3-tab-bar.b3-list.b3-list--background {
-    /* background-color: #fafbfc !important; */
+    background-color: #f3f3f5;
     border-right: 1px solid var(--b3-border-color);
 }
 

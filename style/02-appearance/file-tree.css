@@ -9,7 +9,7 @@
 }
 
 /* 文档树、大纲、反向链接顶部的背景颜色 */
-.block__icons {
+div[data-type="wnd"] .block__icons {
     background-color: var(--b3-theme-surface);
     border-bottom: 2px dashed var(--b3-border-color);
 }
@@ -49,7 +49,9 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
     margin: 6px 4px 6px 14px;
     outline: 1px solid rgba(231, 231, 231, 1);
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow:
+        rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 [data-type="navigation-root"] {

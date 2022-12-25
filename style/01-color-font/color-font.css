@@ -164,7 +164,6 @@
         "Segoe UI Symbol",
         "Noto Color Emoji";
     --b3-font-family-code:
-        "Arvo",
         "JetBrains Mono",
         SFMono-Regular,
         Menlo, Monaco,
@@ -197,7 +196,7 @@
     --b3-scroll-color-card: #ffffffb3;
 
     /* 列表 */
-    --b3-list-hover: transparent;
+    --b3-list-hover: #e7e7e780;
 
     /* 标签页/页签 */
     --b3-tab-background: #f2f2f2;
@@ -340,7 +339,7 @@
     --b3-protyle-inline-link-color: #0066ff;
     --b3-protyle-inline-link-hover-color: red;
     /* 高亮颜色/标记颜色 */
-    --b3-protyle-inline-mark-background: #fffcb4;
+    --b3-protyle-inline-mark-background: #ffed79;
     --b3-protyle-inline-mark-color: black;
     /* 标签颜色 */
     --b3-protyle-inline-tag-background: #b2d1ff6c;

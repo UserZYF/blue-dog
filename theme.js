@@ -215,134 +215,6 @@ setTimeout(() => ClickMonitor(), 1000)
 
 
 
-
-
-
-
-
-
-setTimeout(function () {
-  // 反链全部展开图标
-  var barSearch = document.querySelector(".sy__backlink span[data-type=collapse]")
-  barSearch.insertAdjacentHTML(
-    "beforebegin",
-    `<span id="backlink_allexpand" data-type="collapse_expand" style="width:22px;height:22px;padding-right:2px;" class="block__icon b3-tooltips b3-tooltips__sw" aria-label="反链一键展开"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-    width="1280.000000pt" height="1194.000000pt" viewBox="0 0 1280.000000 1194.000000"
-    preserveAspectRatio="xMidYMid meet">
-   <metadata>
-   Created by potrace 1.15, written by Peter Selinger 2001-2017
-   </metadata>
-   <g transform="translate(0.000000,1194.000000) scale(0.100000,-0.100000)"
-   fill="#00000" stroke="none">
-   <path d="M3075 11863 c-622 -387 -1140 -833 -1582 -1363 -925 -1106 -1440
-   -2454 -1489 -3900 l-7 -200 2241 0 2242 0 0 45 c0 234 89 587 206 815 160 313
-   417 597 695 766 l60 36 -33 58 c-196 345 -2204 3819 -2208 3819 -3 -1 -59 -34
-   -125 -76z"/>
-   <path d="M9534 11832 c-33 -59 -533 -927 -1112 -1929 -579 -1003 -1053 -1827
-   -1054 -1832 -2 -5 43 -40 99 -77 378 -255 652 -631 778 -1069 34 -118 62 -286
-   71 -419 l7 -106 2240 0 2240 0 -7 200 c-68 1986 -1022 3787 -2631 4969 -147
-   108 -552 373 -568 371 -1 0 -29 -49 -63 -108z"/>
-   <path d="M6210 7666 c-470 -85 -824 -366 -995 -790 -159 -397 -112 -829 130
-   -1197 63 -95 239 -271 335 -334 224 -148 452 -218 715 -218 165 -1 230 9 380
-   54 207 64 367 161 526 319 144 143 236 288 304 478 237 664 -121 1403 -790
-   1630 -49 17 -124 38 -165 47 -102 22 -344 28 -440 11z"/>
-   <path d="M5436 4731 c-11 -20 -1530 -2652 -1843 -3194 -206 -356 -376 -654
-   -379 -661 -7 -17 76 -67 311 -186 731 -370 1474 -583 2326 -667 249 -24 844
-   -24 1098 1 845 81 1594 296 2326 666 235 119 318 169 311 186 -4 11 -1949
-   3386 -2168 3762 l-60 103 -53 -30 c-82 -47 -251 -116 -363 -149 -175 -53 -334
-   -75 -532 -76 -320 -1 -588 60 -864 199 -58 29 -108 50 -110 46z"/>
-   </g>
-   </svg></span>`
-  );
-  let backLinkAllExpand = document.getElementById("backlink_allexpand");
-
-  backLinkAllExpand.addEventListener(
-    "click",
-    function (e) {
-      var list = document.querySelector(
-        "div.backlinkList.fn__flex-1 > ul"
-      ).children;
-      for (var i = 0; i < list.length; i++) {
-        if (list[i].nextSibling && (list[i].nextSibling.tagName == "LI" || list[i].nextSibling.className.indexOf("fn__none")) > -1) {
-          list[i].click();
-        }
-        if (i == list.length - 1) {
-          list[i].click();
-        }
-      }
-    },
-    false
-  );
-  backLinkAllExpand.addEventListener(
-    "click",
-    function (e) {
-      e.stopPropagation();
-    },
-    false
-  );
-
-  // 提及全部展开图标
-  var barSearch = document.querySelector(".sy__backlink span[data-type=mCollapse]")
-  barSearch.insertAdjacentHTML(
-    "beforebegin",
-    `<span id="m_backlink_allexpand" data-type="collapse_expand" style="width:22px;height:22px;padding-right:2px;" class="block__icon b3-tooltips b3-tooltips__sw" aria-label="提及一键展开"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-    width="1280.000000pt" height="1194.000000pt" viewBox="0 0 1280.000000 1194.000000"
-    preserveAspectRatio="xMidYMid meet">
-   <metadata>
-   Created by potrace 1.15, written by Peter Selinger 2001-2017
-   </metadata>
-   <g transform="translate(0.000000,1194.000000) scale(0.100000,-0.100000)"
-   fill="#00000" stroke="none">
-   <path d="M3075 11863 c-622 -387 -1140 -833 -1582 -1363 -925 -1106 -1440
-   -2454 -1489 -3900 l-7 -200 2241 0 2242 0 0 45 c0 234 89 587 206 815 160 313
-   417 597 695 766 l60 36 -33 58 c-196 345 -2204 3819 -2208 3819 -3 -1 -59 -34
-   -125 -76z"/>
-   <path d="M9534 11832 c-33 -59 -533 -927 -1112 -1929 -579 -1003 -1053 -1827
-   -1054 -1832 -2 -5 43 -40 99 -77 378 -255 652 -631 778 -1069 34 -118 62 -286
-   71 -419 l7 -106 2240 0 2240 0 -7 200 c-68 1986 -1022 3787 -2631 4969 -147
-   108 -552 373 -568 371 -1 0 -29 -49 -63 -108z"/>
-   <path d="M6210 7666 c-470 -85 -824 -366 -995 -790 -159 -397 -112 -829 130
-   -1197 63 -95 239 -271 335 -334 224 -148 452 -218 715 -218 165 -1 230 9 380
-   54 207 64 367 161 526 319 144 143 236 288 304 478 237 664 -121 1403 -790
-   1630 -49 17 -124 38 -165 47 -102 22 -344 28 -440 11z"/>
-   <path d="M5436 4731 c-11 -20 -1530 -2652 -1843 -3194 -206 -356 -376 -654
-   -379 -661 -7 -17 76 -67 311 -186 731 -370 1474 -583 2326 -667 249 -24 844
-   -24 1098 1 845 81 1594 296 2326 666 235 119 318 169 311 186 -4 11 -1949
-   3386 -2168 3762 l-60 103 -53 -30 c-82 -47 -251 -116 -363 -149 -175 -53 -334
-   -75 -532 -76 -320 -1 -588 60 -864 199 -58 29 -108 50 -110 46z"/>
-   </g>
-   </svg></span>`
-  );
-  let mBackLinkAllExpand = document.getElementById("m_backlink_allexpand");
-
-  mBackLinkAllExpand.addEventListener(
-    "click",
-    function (e) {
-      var list = document.querySelector(
-        "div.backlinkMList.fn__flex-1 > ul"
-      ).children;
-      for (var i = 0; i < list.length; i++) {
-        if (list[i].nextSibling && (list[i].nextSibling.tagName == "LI" || list[i].nextSibling.className.indexOf("fn__none")) > -1) {
-          list[i].click();
-        }
-        if (i == list.length - 1) {
-          list[i].click();
-        }
-      }
-    },
-    false
-  );
-  mBackLinkAllExpand.addEventListener(
-    "click",
-    function (e) {
-      e.stopPropagation();
-    },
-    false
-  );
-}, 500);
-
-
-
 const config = {
   theme: {
     regs: {
@@ -433,3 +305,217 @@ document.addEventListener('mousewheel', e => {
     setTimeout(() => changeFontSize(e.wheelDeltaY), 0);
   }
 }, true);
+
+
+
+
+
+document
+  .querySelector("div.dock span[data-type=backlink]")
+  .addEventListener("click", function () {
+    setTimeout(setAllExpand(), 500);
+  });
+
+var setAllExpand = function () {
+  if (document.getElementById("backlink_allexpand")) {
+    return;
+  }
+  // 反链全部展开图标
+  var barSearch = document.querySelector(
+    ".sy__backlink span[data-type=collapse]"
+  );
+  barSearch.insertAdjacentHTML(
+    "beforebegin",
+    `<span id="backlink_allexpand" data-type="collapse_expand" style="width:22px;height:22px;padding-right:2px;" class="block__icon b3-tooltips b3-tooltips__sw" aria-label="反链一键展开"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="1280.000000pt" height="1194.000000pt" viewBox="0 0 1280.000000 1194.000000"
+    preserveAspectRatio="xMidYMid meet">
+   <metadata>
+   Created by potrace 1.15, written by Peter Selinger 2001-2017
+   </metadata>
+   <g transform="translate(0.000000,1194.000000) scale(0.100000,-0.100000)"
+   fill="#00000" stroke="none">
+   <path d="M3075 11863 c-622 -387 -1140 -833 -1582 -1363 -925 -1106 -1440
+   -2454 -1489 -3900 l-7 -200 2241 0 2242 0 0 45 c0 234 89 587 206 815 160 313
+   417 597 695 766 l60 36 -33 58 c-196 345 -2204 3819 -2208 3819 -3 -1 -59 -34
+   -125 -76z"/>
+   <path d="M9534 11832 c-33 -59 -533 -927 -1112 -1929 -579 -1003 -1053 -1827
+   -1054 -1832 -2 -5 43 -40 99 -77 378 -255 652 -631 778 -1069 34 -118 62 -286
+   71 -419 l7 -106 2240 0 2240 0 -7 200 c-68 1986 -1022 3787 -2631 4969 -147
+   108 -552 373 -568 371 -1 0 -29 -49 -63 -108z"/>
+   <path d="M6210 7666 c-470 -85 -824 -366 -995 -790 -159 -397 -112 -829 130
+   -1197 63 -95 239 -271 335 -334 224 -148 452 -218 715 -218 165 -1 230 9 380
+   54 207 64 367 161 526 319 144 143 236 288 304 478 237 664 -121 1403 -790
+   1630 -49 17 -124 38 -165 47 -102 22 -344 28 -440 11z"/>
+   <path d="M5436 4731 c-11 -20 -1530 -2652 -1843 -3194 -206 -356 -376 -654
+   -379 -661 -7 -17 76 -67 311 -186 731 -370 1474 -583 2326 -667 249 -24 844
+   -24 1098 1 845 81 1594 296 2326 666 235 119 318 169 311 186 -4 11 -1949
+   3386 -2168 3762 l-60 103 -53 -30 c-82 -47 -251 -116 -363 -149 -175 -53 -334
+   -75 -532 -76 -320 -1 -588 60 -864 199 -58 29 -108 50 -110 46z"/>
+   </g>
+   </svg></span>`
+  );
+  let backLinkAllExpand = document.getElementById("backlink_allexpand");
+
+  backLinkAllExpand.addEventListener(
+    "click",
+    function (e) {
+      var list = document.querySelector(
+        "div.backlinkList.fn__flex-1 > ul"
+      ).children;
+      for (var i = 0; i < list.length; i++) {
+        if (
+          list[i].nextSibling &&
+          (list[i].nextSibling.tagName == "LI" ||
+            list[i].nextSibling.className.indexOf("fn__none")) > -1
+        ) {
+          list[i].click();
+        }
+        if (i == list.length - 1) {
+          list[i].click();
+        }
+      }
+    },
+    false
+  );
+  backLinkAllExpand.addEventListener(
+    "click",
+    function (e) {
+      e.stopPropagation();
+    },
+    false
+  );
+
+  // 提及全部展开图标
+  var barSearch = document.querySelector(
+    ".sy__backlink span[data-type=mCollapse]"
+  );
+  barSearch.insertAdjacentHTML(
+    "beforebegin",
+    `<span id="m_backlink_allexpand" data-type="collapse_expand" style="width:22px;height:22px;padding-right:2px;" class="block__icon b3-tooltips b3-tooltips__sw" aria-label="提及一键展开"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="1280.000000pt" height="1194.000000pt" viewBox="0 0 1280.000000 1194.000000"
+    preserveAspectRatio="xMidYMid meet">
+   <metadata>
+   Created by potrace 1.15, written by Peter Selinger 2001-2017
+   </metadata>
+   <g transform="translate(0.000000,1194.000000) scale(0.100000,-0.100000)"
+   fill="#00000" stroke="none">
+   <path d="M3075 11863 c-622 -387 -1140 -833 -1582 -1363 -925 -1106 -1440
+   -2454 -1489 -3900 l-7 -200 2241 0 2242 0 0 45 c0 234 89 587 206 815 160 313
+   417 597 695 766 l60 36 -33 58 c-196 345 -2204 3819 -2208 3819 -3 -1 -59 -34
+   -125 -76z"/>
+   <path d="M9534 11832 c-33 -59 -533 -927 -1112 -1929 -579 -1003 -1053 -1827
+   -1054 -1832 -2 -5 43 -40 99 -77 378 -255 652 -631 778 -1069 34 -118 62 -286
+   71 -419 l7 -106 2240 0 2240 0 -7 200 c-68 1986 -1022 3787 -2631 4969 -147
+   108 -552 373 -568 371 -1 0 -29 -49 -63 -108z"/>
+   <path d="M6210 7666 c-470 -85 -824 -366 -995 -790 -159 -397 -112 -829 130
+   -1197 63 -95 239 -271 335 -334 224 -148 452 -218 715 -218 165 -1 230 9 380
+   54 207 64 367 161 526 319 144 143 236 288 304 478 237 664 -121 1403 -790
+   1630 -49 17 -124 38 -165 47 -102 22 -344 28 -440 11z"/>
+   <path d="M5436 4731 c-11 -20 -1530 -2652 -1843 -3194 -206 -356 -376 -654
+   -379 -661 -7 -17 76 -67 311 -186 731 -370 1474 -583 2326 -667 249 -24 844
+   -24 1098 1 845 81 1594 296 2326 666 235 119 318 169 311 186 -4 11 -1949
+   3386 -2168 3762 l-60 103 -53 -30 c-82 -47 -251 -116 -363 -149 -175 -53 -334
+   -75 -532 -76 -320 -1 -588 60 -864 199 -58 29 -108 50 -110 46z"/>
+   </g>
+   </svg></span>`
+  );
+  let mBackLinkAllExpand = document.getElementById("m_backlink_allexpand");
+
+  mBackLinkAllExpand.addEventListener(
+    "click",
+    function (e) {
+      var list = document.querySelector(
+        "div.backlinkMList.fn__flex-1 > ul"
+      ).children;
+      for (var i = 0; i < list.length; i++) {
+        if (
+          list[i].nextSibling &&
+          (list[i].nextSibling.tagName == "LI" ||
+            list[i].nextSibling.className.indexOf("fn__none")) > -1
+        ) {
+          list[i].click();
+        }
+        if (i == list.length - 1) {
+          list[i].click();
+        }
+      }
+    },
+    false
+  );
+  mBackLinkAllExpand.addEventListener(
+    "click",
+    function (e) {
+      e.stopPropagation();
+    },
+    false
+  );
+};
+setTimeout(setAllExpand(), 500);
+
+
+
+
+// 日历功能
+function initCalendarPanel() {
+
+  // 日历面板================================================================================================================
+
+  var barSearch = document.getElementById("barSearch");
+  barSearch.insertAdjacentHTML(
+    "beforebegin",
+    '<div id="calendar"class="toolbar__item b3-tooltips b3-tooltips__se" aria-label="日历" ></div>'
+  );
+  let calendarIcon = document.getElementById("calendar");
+
+  barSearch.insertAdjacentHTML(
+    "afterend",
+    ` <div
+    data-node-index="1"
+    data-type="NodeWidget"
+    class="iframe"
+    data-subtype="widget"
+  >
+    <div class="iframe-content">
+      <iframe id="calendarPanel" style="visibility:hidden;position: fixed; z-index: 1000; top: 225px; left: 170px;  width: 300px; height: 360px; background: white; box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 6px 0px;  transform: translate(-50%, -50%); overflow: auto;" src="/widgets/日历" data-src="/widgets/日历" data-subtype="widget" ></iframe>
+    </div>
+  </div>`
+  );
+
+  let calendarPanel = document.getElementById("calendarPanel");
+
+  calendarIcon.innerHTML = `<svg t="1663295440835" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4890" width="200" height="200"><path d="M146.285714 0h731.428572a146.285714 146.285714 0 0 1 146.285714 146.285714v731.428572a146.285714 146.285714 0 0 1-146.285714 146.285714H146.285714a146.285714 146.285714 0 0 1-146.285714-146.285714V146.285714a146.285714 146.285714 0 0 1 146.285714-146.285714z m0 73.142857a73.142857 73.142857 0 0 0-73.142857 73.142857v731.428572a73.142857 73.142857 0 0 0 73.142857 73.142857h731.428572a73.142857 73.142857 0 0 0 73.142857-73.142857V146.285714a73.142857 73.142857 0 0 0-73.142857-73.142857H146.285714z" fill="#ffffff" p-id="4891"></path><path d="M0 219.428571h1024v73.142858H0V219.428571z m987.428571 36.571429L950.857143 292.571429V219.428571l36.571428 36.571429z" fill="#ffffff" p-id="4892"></path><path d="M475.428571 438.857143h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z m219.428572 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 0 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142857h-73.142857a36.571429 36.571429 0 0 1 0-73.142857z m-438.857143 146.285714h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m438.857143 0h73.142857a36.571429 36.571429 0 1 1 0 73.142858h-73.142857a36.571429 36.571429 0 1 1 0-73.142858z m-219.428572 0h73.142858a36.571429 36.571429 0 1 1 0 73.142858h-73.142858a36.571429 36.571429 0 1 1 0-73.142858z m0-146.285714h73.142858a36.571429 36.571429 0 0 1 0 73.142857h-73.142858a36.571429 36.571429 0 0 1 0-73.142857z" fill="#ffffff" p-id="4893"></path></svg>`;
+
+  calendarIcon.addEventListener(
+    "click",
+    function (e) {
+      e.stopPropagation();
+      if (calendarPanel.style.visibility === "hidden") {
+        calendarPanel.style.visibility = "visible";
+      } else {
+        calendarPanel.style.visibility = "hidden";
+      }
+    },
+    false
+  );
+
+  calendarPanel.addEventListener(
+    "click",
+    function (e) {
+      e.stopPropagation();
+    },
+    false
+  );
+
+  // 隐藏历史面板
+  function hideCalendarPanel() {
+    if (calendarPanel.style.visibility === "visible") {
+      calendarPanel.style.visibility = "hidden";
+    }
+  }
+  // 点击其他区域时，隐藏日历面板
+  window.addEventListener("click", hideCalendarPanel, false);
+
+
+
+}
+window.onload = setTimeout(initCalendarPanel, 500);

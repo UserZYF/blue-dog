@@ -1,27 +1,11 @@
-/* ------------------------------------------标签 tag--------------------------------------------- */
-.protyle-wysiwyg [data-node-id] span[data-type='tag']:not(:empty) {
-    color: var(--b3-theme-primary);
-    background-color: var(--b3-protyle-inline-tag-background);
-    border-radius: 6px 6px 6px 6px;
-    padding: 2px 4px 2px 2px;
+.protyle-wysiwyg span[data-type="tag"] {
+    border-bottom: 0px solid transparent !important;
+    background-color: #deecff;
+    border-radius: 50px;
+    padding: 2px 5px;
+    margin-right: 3px;
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type="tag"] {
-    border-bottom: none;
-}
-
-.protyle-wysiwyg span[data-type='tag']::before {
-    content: "#";
-    color: var(--b3-white-black);
-    display: inline-block;
-    width: 1.3em;
-    height: 1.3em;
-    line-height: 1.3em;
-    vertical-align: 0em;
-    margin-left: -0.1em;
-    margin-right: 0.1em;
-    border-radius: 6px;
-    background-color: var(--b3-protyle-inline-tag-before);
-    text-align: center;
-    font-weight: bold;
+.protyle-wysiwyg span[data-type="tag"]::before {
+    content: "⭗";
 }

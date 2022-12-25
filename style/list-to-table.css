@@ -32,14 +32,15 @@
     background-color: var(--b3-theme-hover2);
 }
 
-/* ————————————————————大神增加代码———————————————————— */
+/* 段落文字距离前面的列表符号的距离 */
 .protyle-wysiwyg *[custom-f="bg"] [data-node-id].li>[data-node-id] {
-    margin-left: 4px !important;
+    margin-left: 25px !important;
 }
 
 /* ————————————————————对符号后文字设置格式———————————————————— */
 .protyle-wysiwyg *[custom-f="bg"] .p {
     flex: 1;
+    /* padding-left: 18px; */
     text-align: left;
     align-items: center;
     display: flex;
@@ -58,15 +59,41 @@
     border-top: none;
 }
 
-/* ————————————————————去除小竖线———————————————————— */
-.list[data-node-id][data-type="NodeList"][custom-f="bg"] .li>:before {
-    display: none;
-}
-
-/* ————————————————————取消显示符号·———————————————————— */
-.list[data-node-id][data-type="NodeList"][custom-f="bg"] .protyle-action {
-    display: none;
-}
-
 
 /* ---------------------------------------------------------列表转化为表格 END-------------------------------------------------- */
+
+
+/* -----@v2.4.10更新----- */
+/* 列表前面的符号和段落文字垂直居中，抵消base.css默认代码的影响 */
+.protyle-wysiwyg *[custom-f="bg"] .li>div:nth-child(2) {
+    margin-top: 2px !important;
+}
+
+/* 去除列表转表格中首项的列表辅助线 */
+[custom-f="bg"] .li:before {
+    display: none;
+}
+
+
+/* 加入Tsundoku Light的代码，保证列表层级较多时，后面的层级能够垂直居中显示（修复bug） */
+/* 保证列表前面的项目符号垂直居中 */
+.list[data-node-id][data-type="NodeList"][custom-f="bg"] .li>.protyle-action {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    opacity: 0.3;
+}
+
+/*修复bug最终要的代码，保证能够高度100%显示*/
+.protyle-wysiwyg *[custom-f="bg"] .list>.li:first-child:nth-last-child(2) {
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 100%;
+}
+
+/* 代码块 */
+.protyle-wysiwyg *[custom-f="bg"] .li>div.code-block {
+    width: 100%;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+}

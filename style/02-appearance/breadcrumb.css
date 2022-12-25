@@ -8,6 +8,11 @@
     border-bottom: 1px solid var(--b3-breadcrumb-border-color);
 }
 
+/* Ctrl+P搜索界面编辑区域面包屑上方 */
+.b3-dialog__container .protyle-breadcrumb {
+    border-top-width: 0;
+}
+
 .protyle-breadcrumb__bar {
     /* overflow: hidden; */
     margin-top: -2px;
@@ -41,4 +46,11 @@ span.protyle-breadcrumb__item.protyle-breadcrumb__item--active svg.popover__bloc
 
 .protyle-breadcrumb__item:hover svg.popover__block {
     color: var(--b3-theme-on-background) !important;
+}
+
+/* v2.4.10 */
+/* 聚焦或者鼠标悬浮时背景颜色为透明色 */
+.protyle-breadcrumb__item:hover,
+.protyle-breadcrumb__item--active {
+    background-color: transparent;
 }

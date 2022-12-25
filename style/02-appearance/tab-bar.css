@@ -22,6 +22,11 @@ ul.fn__flex.layout-tab-bar {
     display: inline;
 }
 
+/* 标签页关闭按钮一直显示 @v2.4.5 */
+.layout-tab-bar .item__close svg {
+    opacity: 1;
+}
+
 /* -----------------------------------------------------focus----------------------------------------------------- */
 .layout-tab-bar .item--focus {
     color: var(--b3-tab-bar-focus-background);

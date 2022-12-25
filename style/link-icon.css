@@ -25,7 +25,7 @@
 .protyle-wysiwyg [data-node-id] a[href ^="http"]::before,
 .b3-typography a[href ^="http"]::before {
     content: "";
-    background-image: url('../src/link.png');
+    background-image: url('../src/link.svg');
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="weibo.com"]:not(:empty)::before,
@@ -90,12 +90,6 @@
     background-image: url('../icon4Tsundoku/iconfont_cn.png');
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="pan.baidu.com"]:not(:empty)::before,
-.b3-typography a[href *="pan.baidu.com"]::before {
-    content: "";
-    background-image: url('../icon4Tsundoku/pan_baidu_com.png');
-}
-
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="yuque.com"]:not(:empty)::before,
 .b3-typography a[href *="yuque.com"]::before {
     content: "";
@@ -156,22 +150,52 @@
     background-image: url('../icon4Tsundoku/weixin_sogou_com.png');
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="baidu.com"]:not(:empty)::before,
-.b3-typography a[href *="baidu.com"]::before {
+/* 百度搜索 */
+.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="www.baidu.com"]:not(:empty)::before,
+.b3-typography a[href *="www.baidu.com"]::before {
     content: "";
-    background-image: url('../icon4Tsundoku/baidu_com.png');
+    background-image: url('../icon4Tsundoku/baidu.jpg');
+    /* 太素了，加个阴影和边框 */
+    box-shadow:
+        rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+    border-radius: 2px;
 }
 
+/* 百度贴吧 */
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="tieba.baidu.com"]:not(:empty)::before,
 .b3-typography a[href *="tieba.baidu.com"]::before {
     content: "";
-    background-image: url('../icon4Tsundoku/tieba_baidu_com.png');
+    background-image: url('../icon4Tsundoku/tieba.svg');
 }
 
+/* 百度翻译 */
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="fanyi.baidu.com"]:not(:empty)::before,
 .b3-typography a[href *="fanyi.baidu.com"]::before {
     content: "";
     background-image: url('../icon4Tsundoku/fanyi_baidu_com.png');
+}
+
+/* 百度百科 */
+.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="baike.baidu.com"]:not(:empty)::before,
+.b3-typography a[href *="baike.baidu.com"]::before {
+    content: "";
+    background-image: url('../icon4Tsundoku/baidu.jpg');
+    box-shadow:
+        rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+    border-radius: 2px;
+}
+
+/* 百度网盘/百度云 */
+.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="pan.baidu.com"]:not(:empty)::before,
+.b3-typography a[href *="pan.baidu.com"]::before {
+    content: "";
+    background-image: url('../icon4Tsundoku/pan_baidu_com.png');
+    box-shadow:
+        rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+    border-radius: 2px;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="iplaysoft.com"]:not(:empty)::before,
@@ -312,12 +336,6 @@
     background-image: url('../icon4Tsundoku/aliyundrive_com.png');
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="baike.baidu.com"]:not(:empty)::before,
-.b3-typography a[href *="baike.baidu.com"]::before {
-    content: "";
-    background-image: url('../icon4Tsundoku/baike_baidu_com.png');
-}
-
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="apple.com.cn"]:not(:empty)::before,
 .b3-typography a[href *="apple.com.cn"]::before {
     content: "";
@@ -418,6 +436,17 @@
     background-image: url('../icon4Tsundoku/github_com.png');
 }
 
+/* GitHub徽章去掉前面的icon */
+.b3-typography a[href *="github.com"]:has(img):before,
+.b3-typography a[href *="github.com"]:has(https):before {
+    display: none !important;
+}
+
+/* 去掉集市中GitHub徽章下面下划线 */
+.item__readme.b3-typography a[href *="github.com"]:has(img) {
+    border-bottom: none !important;
+}
+
 /* 谷歌翻译 */
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="translate.google.cn"]:not(:empty)::before,
 .b3-typography a[href *="translate.google.cn"]::before {
@@ -475,9 +504,11 @@
     background-image: url('../icon4Tsundoku/Facebook.svg');
 }
 
-/* notion */
-.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="notion"]:not(:empty)::before,
-.b3-typography a[href *="notion"]::before {
+/* notion（排除了Notion主题的影响） */
+.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="notion.site"]:not(:empty)::before,
+.b3-typography a[href *="notion.site"]::before,
+.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="notion.so"]:not(:empty)::before,
+.b3-typography a[href *="notion.so"]::before {
     content: "";
     background-image: url('../icon4Tsundoku/notion.svg');
 }
@@ -640,7 +671,7 @@
     background-image: url('../icon4Tsundoku/fold/xmind.svg');
 }
 
-/* xmind */
+/* MD文档 */
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href $=".md"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a[href $=".md"]::before,
 .b3-typography [href ^="assets/"][href $=".md"]::before {

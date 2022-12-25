@@ -1,5 +1,6 @@
 /* ----------------------------------------------01 顶栏---------------------------------------------- */
-.toolbar {
+/* (1) notion主题标准 */
+/* .toolbar {
     background-color: #f3f5f7 !important;
     margin-bottom: -22px;
     z-index: 99;
@@ -21,8 +22,46 @@
 .toolbar:hover {
     opacity: 1;
     transition: all 300ms;
+} */
+.toolbar {
+    height: 30px;
+    margin-bottom: -30px;
+    opacity: 0;
+    transition: all 300ms;
+    transform: translateY(-20px);
+    z-index: 8;
+    transition-delay: 500ms;
+    background-color: #f3f5f7 !important;
 }
 
+.toolbar:hover {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 300ms;
+}
+
+/* (2) 重新设计的 */
+/* .toolbar {
+    background-color: #f3f5f7 !important;
+    height: 20px;
+    line-height: 20px;
+}
+
+.toolbar .toolbar__item,
+.toolbar div#drag {
+    padding: 2px 9px;
+    opacity: 0;
+}
+
+.toolbar:hover .toolbar__item,
+.toolbar:hover div#drag {
+    opacity: 1;
+}
+
+.toolbar .toolbar__item svg {
+    height: 12px;
+    width: 12px;
+} */
 
 /* ----------------------------------------------02 左侧栏---------------------------------------------- */
 /* 设置左栏蓝色渐变背景，下移item，防止和顶栏冲突 */
@@ -43,7 +82,7 @@ div#dockLeft .dock__item--active svg {
 
 div#dockLeft .dock__item:hover,
 div#dockLeft .dock__item--active {
-    background-color: rgba(0, 102, 255, 0.5);
+    background-color: rgba(0, 102, 255, 0.5) !important;
 }
 
 /* ----------------------------------------------03 右侧栏---------------------------------------------- */

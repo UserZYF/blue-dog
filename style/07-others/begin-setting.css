@@ -50,3 +50,15 @@ body.body--win32 {
 .protyle-gutters button[data-type="fold"] svg[style="width:10px"] {
     color: var(--b3-theme-secondary);
 }
+
+
+/* 去除滚动条，默认主题bug，来自于Sofill主题代码 */
+.fn__flex-column {
+    overflow: hidden;
+}
+
+/* 文本两端对齐，好看，列表转表格时会产生bug */
+.b3-typography>.p,
+.protyle-wysiwyg>.p {
+    text-align: justify;
+}

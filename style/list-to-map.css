@@ -1,47 +1,38 @@
 /* ——————————————————————————自定义样式———————————————————————————————— */
-/* 设置外边框 */
+/* 设置导图无限向右延伸 */
 .protyle-wysiwyg .list[custom-f="dt"] {
-	/* outline: 2px dashed #e9e9e9; */
 	width: fit-content !important;
 	overflow-x: visible;
 	margin: 10px 4px;
 }
 
-/* 设置首项底色为蓝色 */
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] {
+/* 列表中第一层级的文字和背景颜色 */
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li[data-subtype="u"]>div.p>div[spellcheck="false"] {
 	background-color: #34455d;
 	color: white;
 	outline: none;
 	border-radius: 4px;
-	padding: 1px 0px 1px 8px;
-	min-width: 3em;
 	text-align: center;
 }
 
-/* 首项中修改块引用颜色 */
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='block-ref'],
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='file-annotation-ref'] {
-	color: white;
-}
-
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='block-ref']::before,
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.p>div[spellcheck="false"] span[data-type='block-ref']::after {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-/* 第二项颜色 */
-.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li>div.list>div.li>div.p>div[spellcheck="false"] {
+/* 列表中第一层级的文字和背景颜色 */
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li[data-subtype="u"]>div.list>div.li>div.p>div[spellcheck="false"] {
 	color: white;
 	background-color: #84a2ca;
 	outline: none;
 	border-radius: 4px;
-	padding: 1px 0px 1px 8px;
-	min-width: 2.5em;
 	text-align: center;
 }
 
+/* 第一层级和第二层级中含有块引用，虚拟引用，超链接的，背景颜色和其他层级保持一致 */
+/* 还是不完美 */
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li[data-subtype="u"]>div.p div[spellcheck="false"]:has(span[data-type='block-ref'], span[data-type=virtual-block-ref], span[data-type="a"]),
+.protyle-wysiwyg *[custom-f="dt"].list[data-node-index]>div.li[data-subtype="u"]>div.list>div.li>div.p>div[spellcheck="false"]:has(span[data-type='block-ref'], span[data-type=virtual-block-ref], span[data-type="a"]) {
+	color: inherit;
+	background-color: #e3e9f0;
+}
 
-/*————————————————————————Notion主题-列表转导图————————————————————————*/
+/*————————————————————————列表转导图————————————————————————*/
 /*整个导图取消缩进*/
 .protyle-wysiwyg *[custom-f="dt"] .li .list {
 	padding: 0px;
@@ -49,7 +40,12 @@
 	transition: all 0.5s;
 }
 
-
+.protyle-wysiwyg *[custom-f="dt"].list {
+	/* outline: 2px dashed #e9e9e9; */
+	width: fit-content !important;
+	overflow-x: visible;
+	margin: 10px 4px;
+}
 
 /*子项设偏移调整*/
 .protyle-wysiwyg *[custom-f="dt"] [data-node-id].li>[data-node-id] {
@@ -81,52 +77,69 @@
 
 /*取消标题层级提示*/
 .protyle-wysiwyg *[custom-f="dt"] .li div {
-	border-right: 10px solid transparent;
+	border-right: 5px solid transparent;
 }
 
 /*文字框*/
 .protyle-wysiwyg *[custom-f="dt"] .li div>div[spellcheck="false"] {
 	margin-left: -8px;
-	padding: 1px 0px 1px 8px;
+	padding: 1px 0 1px 8px;
 	margin-top: 2px;
-	background-color: var(--b3-block-daotu);
 	border-radius: 4px;
 	color: gray;
 	background-color: #e3e9f0;
-	/* 设置最大宽度 */
-	/* text-align: center; */
-	/* white-space: nowrap; */
 	max-width: 30em;
+	z-index: 1;
 }
 
-/* .protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>[data-node-id]>div[spellcheck="false"] {
-	padding: 5px 0px 5px 35px;
-}
-
+/* -----有序列表----- */
 .protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="o"]>[data-node-id]>div[spellcheck="false"] {
-	padding: 5px 10px 5px 25px;
+	padding: 1px 5px 1px 30px;
 }
 
-.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>.code-block>.protyle-action {
-	padding: 5px 0px 5px 30px;
+/* 代码块 */
+.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="o"]>.code-block>.protyle-action {
+	padding: 1px 0px 1px 30px;
+}
+
+/* .protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="o"]>.code-block {
+	padding: 1px 0px 1px 40px;
+}
+
+.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="o"]>[data-node-id]>div.hljs {
+	padding: 2px 0px 4px 15px !important;
+} */
+
+/* -----待办事项----- */
+.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>[data-node-id]>div[spellcheck="false"] {
+	padding: 1px 5px 1px 30px;
+}
+
+/* .protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>.code-block>.protyle-action {
+	padding: 1px 0px 1px 30px;
 }
 
 .protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="t"]>[data-node-id]>div.hljs {
 	padding: 30px 0px 22px 30px;
-}
-
-.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="o"]>.code-block>.protyle-action {
-	padding: 5px 0px 5px 30px;
-}
-
-.protyle-wysiwyg *[custom-f="dt"] .li[data-subtype="o"]>[data-node-id]>div.hljs {
-	padding: 30px 0px 22px 30px;
 } */
 
+/* -----列表中的代码块中的正文内容----- */
+.protyle-wysiwyg *[custom-f="dt"] .li>.code-block {
+	/* 设置最小宽度，保证代码块功能按键和Mac三点位置不重叠 */
+	min-width: 15vw;
+}
+
+/* 设置代码块边际区域大小 */
 .protyle-wysiwyg *[custom-f="dt"] .li div>div.hljs {
-	padding: 30px 10px 22px;
-	margin-left: 2px;
-	background-color: var(--b3-menu-background);
+	padding: 4px 4px 4px 4px !important;
+	margin-left: 46px;
+	background-color: white;
+	border-radius: 0 3px 3px 0;
+}
+
+/* 设置代码块代码行位置 */
+.protyle-wysiwyg *[custom-f="dt"] .protyle-linenumber__rows {
+	margin-top: 34px !important;
 }
 
 /*去除竖线*/
@@ -134,22 +147,30 @@
 	display: none;
 }
 
-/*无序列表*/
+/*圆点符号居中对齐*/
 .protyle-content *[custom-f~=dt] [data-subtype="u"][data-node-id].li>div.protyle-action {
 	top: 50%;
 	margin-left: -18px;
-	color: #8080804d;
+	color: #80808080;
 }
 
-/*有序列表*/
+/*无序列表*/
 .protyle-content *[custom-f~=dt] [data-subtype="o"][data-node-id].li>div.protyle-action {
 	top: calc(50% + 1px);
+	/* 原本是17px */
 	margin-left: 17px;
-	color: #8080804d;
-	display: none;
+	/* color: #80808080;
+    font-size: 12px; */
 }
 
-/*圆点符号居中对齐*/
+/* .protyle-content *[custom-f~=dt] [data-subtype="o"][data-node-id].li>div.protyle-action::after {
+    background-color: #e5efff;
+    border-radius: 50%;
+    outline: 1px solid rgb(175, 175, 175);
+    color: #80808080;
+} */
+
+/*有序列表*/
 .list[custom-f="dt"][data-node-id] .li>.protyle-action {
 	top: calc(50% + 1px);
 	left: 3px;
@@ -179,6 +200,11 @@
 /*上竖线*/
 .protyle-wysiwyg *[custom-f="dt"] .li::before {
 	bottom: 50%;
+	border-left: 2px solid #e9e9e9;
+	left: 0px;
+}
+
+.protyle-wysiwyg *[custom-f="dt"] .li:hover::before {
 	border-left: 2px solid #e9e9e9;
 }
 
@@ -235,6 +261,7 @@
 	border-top: 2px solid #e9e9e9;
 	width: 20px;
 	height: 0;
+	z-index: 0;
 }
 
 /*取消根目录线*/
@@ -243,4 +270,7 @@ div *[custom-f="dt"]>[data-type="NodeListItem"]::after {
 	display: none;
 }
 
-/*————————————————————————————————————————————————————————————————————————*/
+/*根目录最小宽度，保证块标可点*/
+div *[custom-f="dt"]>[data-type="NodeListItem"]>[data-type="NodeParagraph"]>[spellcheck="false"] {
+	min-width: 50px;
+}

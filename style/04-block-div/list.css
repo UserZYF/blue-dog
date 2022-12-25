@@ -5,3 +5,15 @@
 }
 
 
+/* 列表前面的竖线颜色hover前后颜色一致 */
+.protyle-wysiwyg [data-node-id].li:before,
+.protyle-wysiwyg [data-node-id].li:hover:before {
+    border-left-color: #8080804d;
+}
+
+/* 折叠列表后面显示省略号 */
+/* .protyle-wysiwyg div.list .li[fold="1"] div.p div[spellcheck="false"]::after {
+    content: "...";
+    font-family: var(--b3-font-family-code);
+    color: inherit;
+} */

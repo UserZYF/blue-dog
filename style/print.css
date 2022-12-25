@@ -9,3 +9,9 @@
         width: 100% !important;
     }
 }
+
+
+/* 导出时隐藏备注，来自于Rem Craft的主题作者莽撞人，右侧操作界面#action */
+#preview div.protyle-attr[contenteditable="false"] {
+    display: none !important;
+}

@@ -14,11 +14,11 @@
 
 
 /* ————————————————————界面修改———————————————————— */
-/* 修改上左右dock栏样式 */
+/* 修改上下左右dock栏样式 */
 @import url("style/02-appearance/dock.css");
 /* 修改文档树样式 */
 @import url("style/02-appearance/file-tree.css");
-/* 设置反向链接样式 */
+/* 设置反向链接\反链面板样式 */
 @import url("style/02-appearance/sy__backlink.css");
 /* 修改标签页样式 */
 @import url("style/02-appearance/tab-bar.css");
@@ -51,6 +51,8 @@
 @import url("style/03-inline-span/line-through.css");
 /* 修改块引用样式 */
 @import url("style/03-inline-span/block-ref.css");
+/* 修改虚拟引用的样式 */
+@import url("style/03-inline-span/virtual-block-ref.css");
 /* 修改超链接样式 */
 @import url("style/03-inline-span/a-link.css");
 /* 修改标签样式 */
@@ -121,9 +123,9 @@
 }
 
 @font-face {
-    font-family: 'Arvo';
+    font-family: 'JetBrains Mono';
     font-style: normal;
-    src: url('fonts/Arvo-Regular-5.ttf');
+    src: url('fonts/JetBrainsMono-Regular.ttf');
 }
 
 @font-face {
@@ -192,14 +194,7 @@
     margin-left: 10px;
 } */
 
-
-
-.fn__flex-column {
-    overflow: hidden;
-}
-
-
-.b3-typography>.p,
-.protyle-wysiwyg>.p {
-    text-align: justify;
+/* 设置弹窗高度 */
+.block__popover {
+    height: 80vh;
 }

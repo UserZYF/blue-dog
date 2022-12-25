@@ -132,8 +132,8 @@
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="tieba.baidu.com"]:not(:empty),
 .b3-typography a[href *="tieba.baidu.com"] {
-    color: #3184fe !important;
-    text-decoration-color: #3184fe;
+    color: #306fb6 !important;
+    text-decoration-color: #306fb6;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="fanyi.baidu.com"]:not(:empty),

@@ -3,29 +3,16 @@
     border-radius: 1px !important;
     background-color: #f3f5f7;
     border: 0.1em solid var(--b3-border-color) !important;
-    margin-left: 4px !important;
-}
-
-/* 代码块主体部分设置 */
-.protyle-reset .hljs,
-.protyle-wysiwyg .hljs, .b3-typography .hljs {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    padding-left: 16px;
-    font-family: var(--b3-font-family-code);
-    background-size: 20px 20px;
-    background-image: none !important;
-    background: var(--b3-theme-background) !important;
-    border-top-right-radius: 4px;
-}
-
-/* 代码块上方部分设置 */
-.protyle-wysiwyg .code-block,
-.b3-typography .code-block {
-    position: relative;
-    display: block;
-    border-radius: 1px;
+    /* margin-left: 4px !important; */
     padding-top: 32px !important;
+}
+
+/* 代码块编辑区域/正文内容 */
+.b3-typography div.hljs,
+.protyle-wysiwyg div.hljs {
+    padding: 4px;
+    font-family: var(--b3-font-family-code);
+    background-color: white;
 }
 
 /* 设置顶部三个mac按钮样式 */
@@ -52,6 +39,7 @@
     border-top-left-radius: 4px;
 }
 
+/* 代码块行数的文字颜色 */
 .protyle-linenumber__rows span::before {
     color: rgba(128, 128, 128, 0.5);
 }

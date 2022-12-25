@@ -1,0 +1,5 @@
+/* 虚拟引用 */
+.protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref] {
+    background-color: #8080802b;
+    border-bottom: 2px dashed #80808080;
+}

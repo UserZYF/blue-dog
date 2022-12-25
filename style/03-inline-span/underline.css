@@ -4,3 +4,118 @@
 .protyle-wysiwyg span[data-type~=u] {
     border-bottom: 1px solid var(--b3-theme-on-background);
 }
+
+
+/* 怀旧zhang-light变量 */
+:root {
+    --b3-u-text-color1: #d83931;
+    --b3-u-text-color2: #de7802;
+    --b3-u-text-color3: #856404;
+    --b3-u-text-color4: #2ea121;
+    --b3-u-text-color5: #35737d;
+    --b3-u-text-color6: #245bdb;
+    --b3-u-text-color7: #6425d0;
+}
+
+
+/* -----下划线加字体颜色----- */
+/* 字体颜色设置为默认颜色 */
+span[data-type="u text"][style*="color: var(--b3-font-color"],
+span[data-type="text u"][style*="color: var(--b3-font-color"] {
+    color: inherit !important;
+    font-weight: bold;
+}
+
+/* 01 红 */
+span[data-type="u text"][style="color: var(--b3-font-color1);"],
+span[data-type="text u"][style="color: var(--b3-font-color1);"] {
+    border-bottom: 2px solid var(--b3-u-text-color1);
+}
+
+/* 02 橙 */
+span[data-type="u text"][style="color: var(--b3-font-color2);"],
+span[data-type="text u"][style="color: var(--b3-font-color2);"] {
+    border-bottom: 2px solid var(--b3-u-text-color2);
+}
+
+/* 03 黄 */
+span[data-type="u text"][style="color: var(--b3-font-color3);"],
+span[data-type="text u"][style="color: var(--b3-font-color3);"] {
+    border-bottom: 2px solid var(--b3-u-text-color3);
+}
+
+/* 04 绿 */
+span[data-type="u text"][style="color: var(--b3-font-color4);"],
+span[data-type="text u"][style="color: var(--b3-font-color4);"] {
+    border-bottom: 2px solid var(--b3-u-text-color4);
+}
+
+/* 05 青 */
+span[data-type="u text"][style="color: var(--b3-font-color5);"],
+span[data-type="text u"][style="color: var(--b3-font-color5);"] {
+    border-bottom: 2px solid var(--b3-u-text-color5);
+}
+
+/* 06 蓝 */
+span[data-type="u text"][style="color: var(--b3-font-color6);"],
+span[data-type="text u"][style="color: var(--b3-font-color6);"] {
+    border-bottom: 2px solid var(--b3-u-text-color6);
+}
+
+/* 07 紫 */
+span[data-type="u text"][style="color: var(--b3-font-color7);"],
+span[data-type="text u"][style="color: var(--b3-font-color7);"] {
+    border-bottom: 2px solid var(--b3-u-text-color7);
+}
+
+
+/* -----下划线加背景颜色----- */
+/* 字体颜色设置为默认颜色 */
+span[data-type="u text"][style*="background-color: var(--b3-font-background"],
+span[data-type="text u"][style*="background-color: var(--b3-font-background"] {
+    color: inherit !important;
+    border-bottom: none;
+    border-radius: 3px;
+}
+
+/* 01 红 */
+span[data-type="u text"][style="background-color: var(--b3-font-background1);"],
+span[data-type="text u"][style="background-color: var(--b3-font-background1);"] {
+    border: 2px solid var(--b3-u-text-color1);
+}
+
+/* 02 橙 */
+span[data-type="u text"][style="background-color: var(--b3-font-background2);"],
+span[data-type="text u"][style="background-color: var(--b3-font-background2);"] {
+    border: 2px solid var(--b3-u-text-color2);
+}
+
+/* 03 黄 */
+span[data-type="u text"][style="background-color: var(--b3-font-background3);"],
+span[data-type="text u"][style="background-color: var(--b3-font-background3);"] {
+    border: 2px solid var(--b3-u-text-color3);
+}
+
+/* 04 绿 */
+span[data-type="u text"][style="background-color: var(--b3-font-background4);"],
+span[data-type="text u"][style="background-color: var(--b3-font-background4);"] {
+    border: 2px solid var(--b3-u-text-color4);
+}
+
+/* 05 青 */
+span[data-type="u text"][style="background-color: var(--b3-font-background5);"],
+span[data-type="text u"][style="background-color: var(--b3-font-background5);"] {
+    border: 2px solid var(--b3-u-text-color5);
+}
+
+/* 06 蓝 */
+span[data-type="u text"][style="background-color: var(--b3-font-background6);"],
+span[data-type="text u"][style="background-color: var(--b3-font-background6);"] {
+    border: 2px solid var(--b3-u-text-color6);
+}
+
+/* 07 紫 */
+span[data-type="u text"][style="background-color: var(--b3-font-background7);"],
+span[data-type="text u"][style="background-color: var(--b3-font-background7);"] {
+    border: 2px solid var(--b3-u-text-color7);
+}

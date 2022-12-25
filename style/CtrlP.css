@@ -1,69 +1,41 @@
-/*链滴id：abbj，如果兄弟们用的满意，别忘了使用我得推荐码：K9TdVww */
-/*---------ctrl+p窗口改造-------------*/
-/*放大ctrl+p窗口尺寸*/
-/*不添加[data-key]属性选择器将会同时影响alt+p窗口*/
-/* div[data-key] .b3-dialog__container {
-	width: 95vw !important;
-} */
-
-div[data-key] .b3-dialog__container .fn__flex-column {
-	height: 75vh !important;
-	/* width: 95vw !important; */
+/* 设置搜索界面左侧背景色 */
+.b3-dialog__container .search__list {
+	background-color: #f3f3f5;
 }
 
-/*ctrl+p改造成左右排列*/
-/*先把容器改成左右排列并自动换行*/
-div[data-key] .b3-dialog__container .fn__flex-column {
-	flex-direction: row !important;
-	flex-wrap: wrap;
-}
-
-/*设置需要占满一行的项目*/
-div[data-key] .b3-dialog__container .fn__flex-column .search__header,
-div[data-key] .b3-dialog__container .fn__flex-column .b3-form__space--small {
-	width: 100vw;
-	/*flex-shrink:0;*/
-}
-
-/*窗口宽度大于一定尺寸时候，左右排列*/
-@media screen and (min-width: 960px) {
-
-	/*搜索结果列表占一半宽度，靠左排列*/
-	div[data-key] .b3-dialog__container .fn__flex-column #searchList {
-		float: left;
-		/*width:45vw;*/
-		width: calc(50%);
-		height: calc(100% - 85px) !important;
-		/*禁止搜索结果水平滚动*/
-		overflow-x: hidden !important;
-		overflow-y: auto;
-	}
-
-	/*结果预览自动占满剩余宽度，高度和结果列表等高*/
-	div[data-key] .b3-dialog__container .fn__flex-column #searchPreview {
-		/*width:45vw;*/
-		height: calc(100% - 85px) !important;
-	}
-}
-
-/*窗口宽度小于一定尺寸时候，上下排列*/
-@media screen and (max-width: 960px) {
-	div[data-key] .b3-dialog__container .fn__flex-column #searchList {
-		float: left;
-		/*width:45vw;*/
-		width: calc(100%);
-		height: calc(40% - 85px) !important;
-		/*禁止搜索结果水平滚动*/
-		overflow-x: hidden !important;
-		overflow-y: auto;
-	}
-
-	/*结果预览自动占满剩余高度*/
-	div[data-key] .b3-dialog__container .fn__flex-column #searchPreview {
-		/*width:45vw;*/
-		height: calc(60%) !important;
-	}
+/* 搜索界面文档标题 */
+.b3-dialog__container .search__list>.b3-list-item {
+	height: 32px;
+	border-radius: 2px 2px 0 0;
+	margin: 6px 4px 0px 10px !important;
+	outline: 1px solid #e6e6e8;
+	background-color: #fafafa;
+	/* 顶部阴影 */
+	box-shadow:
+		0px -4px 8px 0px rgba(0, 0, 0, 0.05),
+		0px 1px 0px 0px rgba(230, 230, 232, 1);
 }
 
 
-/*---------ctrl+p窗口改造 end -------------*/
+/* 首个搜索界面标题设置上外边距 */
+.b3-dialog__container .search__list>.b3-list-item:nth-of-type(1) {
+	margin-top: 0px !important;
+}
+
+/* 搜索界面正文内容 */
+.b3-dialog__container .search__list>div:not(div.b3-list-item) {
+	border-radius: 0px 0px 2px 2px;
+	margin: 0px 4px 6px 10px !important;
+	outline: 1px solid #e6e6e8;
+	background-color: white;
+	z-index: 1;
+	/* 顶部阴影 */
+	box-shadow:
+		rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+		rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+/* 调整搜索界面正文内容前面的图标符号 */
+.b3-dialog__container .search__list>div:not(div.b3-list-item) .b3-list-item__graphic {
+	color: rgb(167, 167, 167);
+}
