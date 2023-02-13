@@ -2,7 +2,9 @@
 
 /* 设置引用块格式 */
 .protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
-    color: var(--b3-block-ref-color);
+    /* color: var(--b3-block-ref-color); */
+    /* 腾讯文档logo的配色 */
+    color: #2a65f5;
     font-weight: inherit;
 }
 

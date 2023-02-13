@@ -1,6 +1,6 @@
 /* 设置dialog圆角大小 */
 .b3-dialog__container .b3-text-field.fn__flex-1 {
-    border-radius: var(--b3-border-radius-noraml);
+    border-radius: 0px;
 }
 
 /* ------------------------------------------设置弹窗样式------------------------------------------ */

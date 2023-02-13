@@ -1,7 +1,12 @@
 /* -----------------------------------------------------background----------------------------------------------------- */
 .layout-tab-bar.fn__flex,
 ul.fn__flex.layout-tab-bar {
-    background-color: var(--b3-tab-background);
+    background-color: var(--b3-tab-background) !important;
+}
+
+/* 调整标签页右侧新建和查看标签页的背景颜色 */
+.layout-tab-bar {
+    background-color: var(--b3-tab-background) !important;
 }
 
 /* -----------------------------------------------------tab----------------------------------------------------- */

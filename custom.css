@@ -1,0 +1,200 @@
+/* ----------------------------------------------------引入开始---------------------------------------------------------- */
+
+/* ————————————————————初始设置———————————————————— */
+/* 引入颜色和字体 */
+@import url("style/01-color-font/color-font.css");
+/* 引入一些初始设置 */
+@import url("style/07-others/begin-setting.css");
+/* 引入空行提示 */
+@import url("style/07-others/empty-letter.css");
+/* 引入网址链接前的图标相关代码 */
+@import url("style/link-icon.css");
+/* 给网址链接设置颜色 */
+@import url("style/link-icon-color.css");
+
+
+/* ————————————————————界面修改———————————————————— */
+/* 修改上下左右dock栏样式 */
+@import url("style/02-appearance/dock.css");
+/* 修改文档树样式 */
+@import url("style/02-appearance/file-tree.css");
+/* 设置反向链接\反链面板样式 */
+@import url("style/02-appearance/sy__backlink.css");
+/* 修改标签页样式 */
+@import url("style/02-appearance/tab-bar.css");
+/* 修改面包屑样式 */
+@import url("style/02-appearance/breadcrumb.css");
+/* 修改鼠标滑选块时光标颜色 */
+@import url("style/02-appearance/mouse.css");
+/* 修改选中文字后弹出的悬浮工具栏的样式 */
+@import url("style/02-appearance/toolbar.css");
+/* 修改菜单的样式 */
+@import url("style/02-appearance/menu.css");
+/* 修改弹出窗口的样式 */
+@import url("style/02-appearance/dialog.css");
+/* 修改分栏 */
+@import url("style/02-appearance/column.css");
+/* 修改按钮样式 */
+@import url("style/02-appearance/button.css");
+/* 修改设置界面样式 */
+@import url("style/02-appearance/setting-option.css");
+
+
+/* ————————————————————行内元素———————————————————— */
+/* 修改高亮样式 */
+@import url("style/03-inline-span/mark.css");
+/* 修改加粗样式 */
+@import url("style/03-inline-span/strong.css");
+/* 修改下划线样式 */
+@import url("style/03-inline-span/underline.css");
+/* 修改删除线样式 */
+@import url("style/03-inline-span/line-through.css");
+/* 修改块引用样式 */
+@import url("style/03-inline-span/block-ref.css");
+/* 修改虚拟引用的样式 */
+@import url("style/03-inline-span/virtual-block-ref.css");
+/* 修改超链接样式 */
+@import url("style/03-inline-span/a-link.css");
+/* 修改标签样式 */
+@import url("style/03-inline-span/tag.css");
+/* 修改键盘keyboard样式 */
+@import url("style/03-inline-span/keyboard.css");
+/* 修改行内代码样式 */
+@import url("style/03-inline-span/inline-code.css");
+/* 修改上标和下标样式 */
+@import url("style/03-inline-span/sup-sub.css");
+/* 修改更多字体的样式 */
+@import url("style/03-inline-span/strong-morestyle.css");
+
+/* ————————————————————块级元素———————————————————— */
+/* 修改表格样式 */
+@import url("style/04-block-div/table.css");
+/* 修改引用样式 */
+@import url("style/04-block-div/blockquote.css");
+/* 修改嵌入块样式 */
+@import url("style/04-block-div/render-node.css");
+/* 修改图片样式 */
+@import url("style/04-block-div/image.css");
+/* 修改列表样式 */
+@import url("style/04-block-div/list.css");
+/* 修改待办事项样式 */
+@import url("style/04-block-div/task.css");
+/* 修改代码块样式 */
+@import url("style/04-block-div/code-block.css");
+/* 修改超级块样式 */
+@import url("style/04-block-div/super-block.css");
+/* 修改PDF双链的样式 */
+@import url("style/04-block-div/pdf.css");
+/* 修改分割线样式 */
+@import url("style/04-block-div/divider-fengexian.css");
+/* 修改标题样式 */
+@import url("style/04-block-div/NodeHeading-biaoti.css");
+/* 引入4种样式 */
+@import url("style/04-block-div/card.css");
+/* 修改批注/备注样式 */
+@import url("style/04-block-div/inline-memo.css");
+
+/* ————————————————————自定义属性———————————————————— */
+/* 增加文档的自定义属性 */
+@import url("style/05-custom-function-for-file/custom-function-for-file.css");
+/* 增加块的自定义属性 */
+@import url("style/06-custom-function-for-block/custom-function-for-block.css");
+/* 增加列表转表格代码 */
+@import url("style/list-to-table.css");
+/* 增加 Roy 的列表转思维导图代码 */
+@import url("style/list-to-map.css");
+/* 增加 Roy 的列表转看板代码 */
+@import url("style/list-to-board.css");
+
+/* ————————————————————引入自定义设置———————————————————— */
+/* 搜索界面左右排版 */
+@import url("style/CtrlP.css");
+/* 打印样式 */
+@import url("style/print.css");
+/* 引入大家的自定义配置，放到widgets文件夹下，名称为custom.css */
+@import url(/widgets/custom.css);
+
+/* ----------------------------------------------------引入结束---------------------------------------------------------- */
+
+@font-face {
+    font-family: 'D-DIN';
+    font-style: normal;
+    src: url('fonts/D-DIN.otf');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    src: url('fonts/JetBrainsMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'MiSans';
+    font-style: normal;
+    src: url('fonts/MiSans-Regular.ttf');
+}
+
+
+/* ------------------------------------------------各级标题样式------------------------------------------------------- */
+
+/* h1 */
+/* https://www.bilibili.com/video/BV1XL411n77J/ */
+/* .h1 div[spellcheck="false"] {
+    padding: 4px 0px 4px 10px;
+    color: white;
+    background-color: #6ea5f7;
+    border-left: 12px solid #ffca6e;
+} */
+
+
+/* h2 */
+/* https://baike.baidu.com/item/中国/1122445 */
+.h3 div[spellcheck="false"] {
+    border-left: 12px solid var(--b3-theme-primary-lighter);
+    padding: 0px 0 0 10px;
+}
+
+.h3 div[spellcheck="false"]::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: -webkit-fill-available;
+    height: 1px;
+    top: 50%;
+    background-color: var(--b3-border-color1);
+    margin-left: 10px;
+}
+
+/* 去掉3级标题后边的横线，否则会和文本省略号冲突，导致位置错乱 */
+.h3[fold="1"] div[spellcheck="false"]::after {
+    display: none;
+}
+
+/* h3 */
+/* http://free-line-design.com/?p=482 */
+/* .h3 div[spellcheck="false"] {
+    padding: 0px 0px 0px 10px;
+    border-left: 4px solid var(--b3-theme-primary-lighter);
+} */
+
+
+
+/* .h2 div[spellcheck="false"]  {
+    border-left: 12px solid var(--b3-theme-primary-lighter);
+    padding: 0px 0 0 10px;
+}
+
+.h2 div[spellcheck="false"]::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: -webkit-fill-available;
+    height: 30px;
+    background-color: var(--b3-theme-primary-lighter);
+    margin-left: 10px;
+} */
+
+/* 设置弹窗高度 */
+.block__popover {
+    height: 80vh;
+}

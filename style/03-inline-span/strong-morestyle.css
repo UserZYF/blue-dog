@@ -1,3 +1,9 @@
+/* 对字体默认加粗（因为默认字体加粗效果不明显） */
+span[data-type *="text"] {
+    font-weight: bold;
+}
+
+
 /* ————————————————————————————color字体颜色———————————————————————————— */
 
 span[style="color: var(--b3-font-color8);"] {
@@ -100,7 +106,7 @@ span[style="background-color: var(--b3-font-background13);"]:hover {
 }
 
 /* .b3-menu__item--show .b3-menu__submenu--row span[style*="color:var(--b3-font-"]::before, */
-.b3-color__square[data-type="color"][style*="background-color:var(--b3-font-"]:before {
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-"]:before {
     display: inline-block;
     position: absolute;
     font-family: "微软雅黑";
@@ -111,75 +117,84 @@ span[style="background-color: var(--b3-font-background13);"]:hover {
     z-index: -1;
 }
 
+/* 隐藏字体颜色中的A */
+.b3-color__square[data-type="color"][style*="color:var(--b3-font-"] {
+    color: transparent !important;
+}
+
 /* 设置文字介绍 */
 .b3-menu__item--show .b3-menu__submenu--row span[style="color:var(--b3-font-color1)"]::before,
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color1)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color1)"]:before {
     content: "红";
     color: var(--b3-font-color1);
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color2)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color2)"]:before {
     content: "橙";
     color: var(--b3-font-color2);
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color3)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color3)"]:before {
     content: "黄";
     color: var(--b3-font-color3);
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color4)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color4)"]:before {
     content: "绿";
     color: var(--b3-font-color4);
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color5)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color5)"]:before {
     content: "青";
     color: var(--b3-font-color5);
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color6)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color6)"]:before {
     content: "蓝";
     color: var(--b3-font-color6);
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color7)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color7)"]:before {
     content: "紫";
     color: var(--b3-font-color7);
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color8)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color8)"]:before {
     content: "灰";
     color: #7a878b70;
 }
 
 /* 设置字体样式 */
-.p[data-type="NodeParagraph"][style="background-color: var(--b3-font-color9);"],
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color9)"]:before {
+.p[data-type="NodeParagraph"][style="color: var(--b3-font-color9);"],
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color9)"]:before {
     content: "宋";
     font-family: "宋体";
+    color: black;
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color10)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color10)"]:before {
     content: "楷";
     font-family: "楷体";
     font-size: 1.4em;
+    color: black;
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color11)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color11)"]:before {
     content: "黑";
     font-family: "黑体";
+    color: black;
 }
 
 /* 设置曲线样式 */
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color12)"]:before {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color12)"]:before {
     content: "+";
     font-size: 2em;
     position: absolute;
     top: -0.33em;
+    color: black;
 }
 
-.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color13)"] {
+.b3-color__square[data-type="color"][style="color:var(--b3-font-color13)"] {
     color: transparent !important;
     background-color: var(--b3-font-color13) !important;
 }

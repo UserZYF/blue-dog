@@ -3,3 +3,19 @@
     background-color: #8080802b;
     border-bottom: 2px dashed #80808080;
 }
+
+
+/* 保持虚拟引用与块引用样式的一致性 */
+/* .protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref] {
+    color: gray;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref]::before {
+    color: #80808080;
+    content: "[[";
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref]::after {
+    color: #80808080;
+    content: "]]";
+} */

@@ -40,6 +40,11 @@
     transition: all 300ms;
 }
 
+/* 设置切换数据文件夹中文字的颜色 */
+.toolbar__text {
+    color: gray;
+}
+
 /* (2) 重新设计的 */
 /* .toolbar {
     background-color: #f3f5f7 !important;

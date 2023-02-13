@@ -8,12 +8,20 @@
 
 
 .table {
-    width: fit-content;
+    width: fit-content !important;
 }
 
 /* 表格表行 */
-.b3-typography table tr,
+/* .b3-typography table tr,
 .protyle-wysiwyg table tr {
+    background-color: var(--b3-table-tr-background);
+} */
+
+
+.b3-typography table tr td,
+.b3-typography table tr th,
+.protyle-wysiwyg table tr td,
+.protyle-wysiwyg table tr th {
     background-color: var(--b3-table-tr-background);
 }
 

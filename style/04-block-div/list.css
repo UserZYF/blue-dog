@@ -11,9 +11,8 @@
     border-left-color: #8080804d;
 }
 
-/* 折叠列表后面显示省略号 */
-/* .protyle-wysiwyg div.list .li[fold="1"] div.p div[spellcheck="false"]::after {
-    content: "...";
-    font-family: var(--b3-font-family-code);
-    color: inherit;
-} */
+/* 折叠列表前面的·符号背景加上一个边框，使折叠更加突出 */
+/* 灵感来自Dark+主题和tana软件 */
+.protyle-wysiwyg [data-node-id].li[data-subtype="u"][fold="1"]>.protyle-action:after {
+    outline: 2px dashed rgb(180, 180, 180);
+}

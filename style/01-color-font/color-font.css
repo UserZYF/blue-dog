@@ -24,6 +24,8 @@
     --b3-dockleft-background: linear-gradient(to right, #75a7f1, #65a3ff);
     --b3-dockright-background: white;
     --b3-status-background: white;
+    /* 新加入变量，鼠标在toolbar悬浮时的背景颜色 */
+    --b3-toolbar-hover: #8080804d;
 
     /* ————————————————————文档树界面———————————————————— */
     --b3-block-logo-color: #80808080;
@@ -229,13 +231,13 @@
     --b3-card-darker-green: #325342;
 
     /* 13种自定义文字颜色 */
-    --b3-font-color1: #dc3545;
-    --b3-font-color2: #fd7e14;
-    --b3-font-color3: #ffc107;
-    --b3-font-color4: #28a745;
+    --b3-font-color1: #de3c36;
+    --b3-font-color2: #f88825;
+    --b3-font-color3: #f5c400;
+    --b3-font-color4: #319b62;
     --b3-font-color5: #17a2b8;
-    --b3-font-color6: #007bff;
-    --b3-font-color7: #6f42c1;
+    --b3-font-color6: #2972f4;
+    --b3-font-color7: #9a38d7;
     --b3-font-color8: #7a878b70;
     --b3-font-color9: #f4c2c7;
     --b3-font-color10: #ffecb4;
@@ -244,14 +246,14 @@
     --b3-font-color13: #d5d5d6;
 
     /* 13种自定义背景颜色 */
-    --b3-font-background1: #fbd2d4;
-    --b3-font-background2: #fce1cd;
-    --b3-font-background3: #fcf4cc;
-    --b3-font-background4: #cce7e0;
-    --b3-font-background5: #cde3f4;
-    --b3-font-background6: #dbdcf4;
-    --b3-font-background7: #e7d5f5;
-    --b3-font-background8: #f1f1f1;
+    --b3-font-background1: #fbbfbc;
+    --b3-font-background2: #fed4a4;
+    --b3-font-background3: #ffe9a1;
+    --b3-font-background4: #b7edb1;
+    --b3-font-background5: #d1ecf1;
+    --b3-font-background6: #bacefd;
+    --b3-font-background7: #cdb2fa;
+    --b3-font-background8: #e1e1e1;
     --b3-font-background9: #dc3545;
     --b3-font-background10: #ffc107;
     --b3-font-background11: #17a2b8;

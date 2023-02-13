@@ -54,3 +54,10 @@ span.protyle-breadcrumb__item.protyle-breadcrumb__item--active svg.popover__bloc
 .protyle-breadcrumb__item--active {
     background-color: transparent;
 }
+
+
+/* “退出聚焦”提示更加明显 */
+button.fn__flex-center[data-type="exit-focus"] {
+    background-color: var(--b3-theme-secondary) !important;
+    color: white !important;
+}
